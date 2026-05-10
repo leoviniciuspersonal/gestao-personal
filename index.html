@@ -277,6 +277,116 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 .toast.show{opacity:1}
 .sync-dot{position:fixed;top:14px;right:14px;width:7px;height:7px;border-radius:50%;background:var(--g1);z-index:100;opacity:0;transition:opacity .3s;box-shadow:0 0 8px var(--g1)}
 .sync-dot.show{opacity:1}
+
+/* Status aluno */
+.status-badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:var(--r-pill);font-family:var(--mono);letter-spacing:.04em}
+.status-badge.ativo{background:var(--g4);color:var(--g1)}
+.status-badge.pausado{background:var(--amber-lt);color:var(--amber)}
+.status-badge.ferias{background:var(--pr-lt);color:var(--pr-dk)}
+.status-badge.cancelado{background:var(--red-lt);color:var(--red)}
+/* Aniversários do mês */
+.aniv-mes-card{background:var(--card);border-radius:var(--r);padding:14px;margin-bottom:14px;border:.5px solid var(--border)}
+.aniv-mes-title{font-size:11px;font-weight:700;color:var(--amber);margin-bottom:10px;letter-spacing:.06em;text-transform:uppercase}
+.aniv-mes-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:.5px solid var(--border)}
+.aniv-mes-row:last-child{border:none}
+.aniv-mes-av{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.aniv-mes-info{flex:1}
+.aniv-mes-nome{font-size:13px;font-weight:500}
+.aniv-mes-data{font-size:10px;color:var(--muted);font-family:var(--mono);margin-top:1px}
+.aniv-mes-btn{font-size:11px;color:var(--g1);cursor:pointer;background:none;border:.5px solid var(--g2);padding:4px 10px;border-radius:var(--r-xs)}
+.aniv-mes-btn:hover{background:var(--g4)}
+/* Despesas */
+.desp-card{background:var(--card);border-radius:var(--r);padding:12px 14px;margin-bottom:7px;border:.5px solid var(--border);display:flex;align-items:center;gap:10px}
+.desp-nome{font-size:13px;font-weight:500;flex:1}
+.desp-cat{font-size:9px;font-family:var(--mono);color:var(--muted);margin-top:2px}
+.desp-val{font-size:13px;font-family:var(--mono);color:var(--red);font-weight:600}
+.desp-del{font-size:18px;color:var(--faint);cursor:pointer;background:none;border:none;line-height:1;padding:0 4px}
+.desp-del:hover{color:var(--red)}
+.desp-form{background:var(--bg3);border-radius:var(--r);padding:14px;border:.5px solid var(--border);margin-top:10px}
+.desp-form-title{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.lucro-card{border-radius:var(--r);padding:14px;margin-bottom:14px;border:.5px solid var(--border);display:flex;align-items:center;gap:12px}
+.lucro-card.positivo{background:var(--g4);border-color:var(--g2)}
+.lucro-card.negativo{background:var(--red-lt);border-color:var(--red)}
+.lucro-val{font-size:24px;font-weight:700;font-family:var(--mono);flex:1}
+.lucro-card.positivo .lucro-val{color:var(--g1)}
+.lucro-card.negativo .lucro-val{color:var(--red)}
+.lucro-lbl{font-size:11px;color:var(--muted)}
+/* Histórico presença */
+.pres-bar-wrap{display:flex;align-items:flex-end;gap:4px;height:60px;margin-bottom:6px}
+.pres-bar{flex:1;background:var(--bg3);border-radius:3px 3px 0 0;position:relative;min-height:3px;transition:height .4s}
+.pres-bar.cur{background:var(--g1)}.pres-bar.old{background:var(--border2)}
+.pres-bar-lbl{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:7px;color:var(--faint);font-family:var(--mono);white-space:nowrap}
+.pres-axis{height:16px}
+.pres-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
+.pres-stat{background:var(--bg3);border-radius:var(--r-sm);padding:10px;text-align:center;border:.5px solid var(--border)}
+.pres-stat-v{font-size:20px;font-weight:700;font-family:var(--mono);color:var(--g1);line-height:1}
+.pres-stat-l{font-size:9px;color:var(--muted);margin-top:3px}
+/* WhatsApp btn */
+.wpp-btn{font-size:11px;color:#25D366;cursor:pointer;background:none;border:.5px solid #25D366;padding:4px 10px;border-radius:var(--r-xs);white-space:nowrap}
+.wpp-btn:hover{background:rgba(37,211,102,.1)}
+
+/* Grade fixa */
+.grade-screen{padding:14px}
+.gsec{font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;margin-top:16px}
+.gsec:first-child{margin-top:0}
+.ga-card{background:var(--card);border-radius:var(--r);padding:12px 14px;margin-bottom:8px;border:.5px solid var(--border)}
+.ga-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.ga-av{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.ga-name{font-size:13px;font-weight:600;flex:1}
+.ga-loc{font-size:10px;font-family:var(--mono);font-weight:700;padding:3px 8px;border-radius:var(--r-xs)}
+.ga-loc.fs{background:var(--fs-lt);color:var(--fs-dk)}.ga-loc.ic{background:var(--ic-lt);color:var(--ic-dk)}
+.ga-loc.pr{background:var(--pr-lt);color:var(--pr-dk)}.ga-loc.cd{background:var(--cd-lt);color:var(--cd-dk)}
+.dias-wrap{display:flex;gap:5px;margin-bottom:10px;flex-wrap:wrap}
+.dia-btn{width:36px;height:36px;border-radius:50%;border:.5px solid var(--border);background:var(--bg3);cursor:pointer;font-size:10px;font-weight:700;color:var(--muted);transition:all .15s;font-family:var(--mono)}
+.dia-btn.sel{background:var(--g1);color:#000;border-color:var(--g1)}
+.ga-selects{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.ga-select-wrap{display:flex;flex-direction:column;gap:4px;flex:1;min-width:100px}
+.ga-select-lbl{font-size:10px;color:var(--muted);font-weight:500}
+.ga-sel{padding:7px 10px;border:.5px solid var(--border);border-radius:var(--r-sm);font-size:12px;outline:none;background:var(--bg3);color:var(--text);width:100%;cursor:pointer}
+.ga-sel:focus{border-color:var(--g1)}
+.ga-save-btn{padding:8px 14px;background:var(--g1);color:#000;border:none;border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;align-self:flex-end}
+.ga-slots-preview{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px;padding-top:8px;border-top:.5px solid var(--border)}
+.ga-slot-tag{font-size:10px;font-family:var(--mono);padding:3px 8px;border-radius:var(--r-xs);font-weight:600}
+.ga-slot-tag.fs{background:var(--fs-lt);color:var(--fs-dk)}.ga-slot-tag.ic{background:var(--ic-lt);color:var(--ic-dk)}
+.ga-slot-tag.pr{background:var(--pr-lt);color:var(--pr-dk)}.ga-slot-tag.cd{background:var(--cd-lt);color:var(--cd-dk)}
+/* Blocos no calendário */
+.cal-bloco{display:flex;flex-direction:column;align-items:flex-start;padding:6px 10px;border-radius:var(--r-sm);margin-bottom:4px;border-left:3px solid;position:relative;cursor:pointer;transition:opacity .1s}
+.cal-bloco:hover{opacity:.85}
+.cal-bloco.fs{background:var(--fs-lt);border-color:var(--fs-dk)}.cal-bloco.ic{background:var(--ic-lt);border-color:var(--ic-dk)}
+.cal-bloco.pr{background:var(--pr-lt);border-color:var(--pr-dk)}.cal-bloco.cd{background:var(--cd-lt);border-color:var(--cd-dk)}
+.bloco-hora{font-size:10px;font-family:var(--mono);font-weight:700;opacity:.7}
+.bloco-nome{font-size:12px;font-weight:600;margin-top:1px}
+.bloco-dur{font-size:10px;opacity:.6;margin-top:1px}
+.bloco-del{position:absolute;top:4px;right:6px;font-size:14px;color:var(--faint);background:none;border:none;cursor:pointer;line-height:1}
+.bloco-del:hover{color:var(--red)}
+.dd-add-btn{width:100%;padding:8px;border:.5px dashed var(--border2);border-radius:var(--r-sm);background:none;color:var(--muted);cursor:pointer;font-size:12px;margin-top:6px;transition:all .1s}
+.dd-add-btn:hover{border-color:var(--g1);color:var(--g1);background:var(--g4)}
+/* Modal edição de aula */
+.edit-modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:400;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
+.edit-modal-bg.open{display:flex}
+.edit-modal{background:var(--bg2);border-radius:var(--r);padding:20px;width:100%;max-width:360px;border:.5px solid var(--border);animation:fadeIn .2s}
+.edit-modal-title{font-size:15px;font-weight:700;margin-bottom:4px}
+.edit-modal-sub{font-size:11px;color:var(--muted);font-family:var(--mono);margin-bottom:16px}
+.edit-row{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.edit-lbl{font-size:10px;color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+.edit-sel{padding:9px 11px;border:.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;outline:none;background:var(--bg3);color:var(--text);width:100%;cursor:pointer}
+.edit-sel:focus{border-color:var(--g1)}
+.edit-scope{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.scope-opt{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:var(--r-sm);border:.5px solid var(--border);cursor:pointer;transition:all .15s}
+.scope-opt.sel{border-color:var(--g1);background:var(--g4)}
+.scope-opt-radio{width:16px;height:16px;border-radius:50%;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.scope-opt.sel .scope-opt-radio{border-color:var(--g1);background:var(--g1)}
+.scope-opt.sel .scope-opt-radio::after{content:"";width:6px;height:6px;border-radius:50%;background:#000}
+.scope-opt-text{flex:1}
+.scope-opt-title{font-size:12px;font-weight:600}
+.scope-opt-sub{font-size:11px;color:var(--muted);margin-top:2px}
+.edit-btns{display:flex;gap:8px}
+.edit-confirm{flex:1;padding:11px;background:var(--g1);color:#000;border:none;border-radius:var(--r-sm);font-size:13px;font-weight:700;cursor:pointer}
+.edit-confirm:hover{background:var(--g5)}
+.edit-cancel{padding:11px 16px;background:none;color:var(--muted);border:.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;cursor:pointer}
+.edit-del-btn{width:100%;padding:10px;background:none;color:var(--red);border:.5px solid var(--red-lt);border-radius:var(--r-sm);font-size:12px;cursor:pointer;margin-bottom:8px}
+.edit-del-btn:hover{background:var(--red-lt)}
+
 </style>
 </head>
 <body>
@@ -299,6 +409,10 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
     <div class="screen" id="s-reg"><div class="cal-wrap" id="cal-content"></div></div>
     <div class="screen" id="s-alunos"><div class="al-pad"><input class="al-search" id="al-search" placeholder="🔍  Buscar aluno..." oninput="filterAl(this.value)"><div id="al-content"></div></div></div>
     <div class="screen" id="s-fin"><div class="fin-pad" id="fin-content"></div></div>
+    
+
+    <div class="screen" id="s-grade"><div class="grade-screen" id="grade-content"></div></div>
+    <div class="screen" id="s-desp"><div class="fin-pad" id="desp-content"></div></div>
     <div class="screen" id="s-dash"><div class="dash-pad" id="dash-content"></div></div>
   </div>
   <div class="bnav">
@@ -306,6 +420,8 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
     <button class="nb" onclick="goScreen('reg',this)"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>Registro</button>
     <button class="nb" onclick="goScreen('alunos',this)"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>Alunos</button>
     <button class="nb" onclick="goScreen('fin',this)"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Financeiro</button>
+    <button class="nb" onclick="goScreen('grade',this)"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="13" x2="8" y2="17"/><line x1="12" y1="13" x2="12" y2="17"/><line x1="16" y1="13" x2="16" y2="17"/></svg>Grade</button>
+    <button class="nb" onclick="goScreen('desp',this)"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Despesas</button>
     <button class="nb" onclick="goScreen('dash',this)"><svg viewBox="0 0 24 24"><rect x="3" y="12" width="4" height="9"/><rect x="10" y="7" width="4" height="14"/><rect x="17" y="3" width="4" height="18"/></svg>Dashboard</button>
   </div>
 </div>
@@ -317,6 +433,54 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
     <div class="ficha-hdr"><div class="ficha-av" id="f-av"></div><div style="flex:1"><div class="ficha-hdr-title" id="f-title">Ficha</div><div class="ficha-hdr-sub" id="f-sub"></div></div><button class="ficha-close" onclick="closeF()">×</button></div>
     <div class="ficha-tabs" id="ficha-tabs"></div>
     <div class="ficha-body" id="ficha-body"></div>
+  </div>
+</div>
+
+<div class="edit-modal-bg" id="edit-modal-bg">
+  <div class="edit-modal">
+    <div class="edit-modal-title" id="em-title">Editar aula</div>
+    <div class="edit-modal-sub" id="em-sub"></div>
+    <div class="edit-row">
+      <div class="edit-lbl">Aluno</div>
+      <select class="edit-sel" id="em-aluno"></select>
+    </div>
+    <div class="edit-row">
+      <div class="edit-lbl">Horário</div>
+      <select class="edit-sel" id="em-hora"></select>
+    </div>
+    <div class="edit-row">
+      <div class="edit-lbl">Duração</div>
+      <select class="edit-sel" id="em-dur">
+        <option value="30">30 minutos</option>
+        <option value="45">45 minutos</option>
+        <option value="60" selected>1 hora</option>
+        <option value="75">1h 15min</option>
+        <option value="90">1h 30min</option>
+        <option value="120">2 horas</option>
+      </select>
+    </div>
+    <div class="edit-lbl" style="margin-bottom:8px">Aplicar alteração</div>
+    <div class="edit-scope">
+      <div class="edit-scope-opt scope-opt sel" id="scope-day" onclick="selScope('day')">
+        <div class="scope-opt-radio"></div>
+        <div class="scope-opt-text">
+          <div class="scope-opt-title">Só este dia</div>
+          <div class="scope-opt-sub">Os outros dias ficam como estão</div>
+        </div>
+      </div>
+      <div class="edit-scope-opt scope-opt" id="scope-fwd" onclick="selScope('fwd')">
+        <div class="scope-opt-radio"></div>
+        <div class="scope-opt-text">
+          <div class="scope-opt-title">Este dia em diante</div>
+          <div class="scope-opt-sub">Atualiza a grade a partir desta data</div>
+        </div>
+      </div>
+    </div>
+    <button class="edit-del-btn" id="em-del-btn">Remover esta aula</button>
+    <div class="edit-btns">
+      <button class="edit-cancel" onclick="closeEditModal()">Cancelar</button>
+      <button class="edit-confirm" onclick="confirmEdit()">Confirmar</button>
+    </div>
   </div>
 </div>
 <div class="sync-dot" id="sync-dot"></div>
@@ -345,6 +509,411 @@ const fR=(v,sh=false)=>{if(v==null||v==="")return"–";const n=Number(v);return 
 const avS=(l)=>({FS:"background:var(--fs-lt);color:var(--fs-dk)",IC:"background:var(--ic-lt);color:var(--ic-dk)",PR:"background:var(--pr-lt);color:var(--pr-dk)",CD:"background:var(--cd-lt);color:var(--cd-dk)"}[l]||"background:var(--bg3);color:var(--muted)");
 function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2000);}
 function showSync(){const s=document.getElementById("sync-dot");s.classList.add("show");setTimeout(()=>s.classList.remove("show"),1200);}
+
+// ── Despesas ─────────────────────────────────────────────────
+const sv=(k,v)=>{try{localStorage.setItem("lp_"+k,JSON.stringify(v))}catch(e){}};
+const ld=(k,d)=>{try{const v=localStorage.getItem("lp_"+k);return v?JSON.parse(v):d}catch(e){return d}};
+let despesas=ld("despesas",[]);
+
+function mTotDesp(mo){return despesas.filter(d=>d.mes===mo&&d.ano===ANO).reduce((s,d)=>s+Number(d.valor),0);}
+
+function renderDesp(){
+  const mo=curMes;
+  const lista=despesas.filter(d=>d.mes===mo&&d.ano===ANO);
+  const total=lista.reduce((s,d)=>s+Number(d.valor),0);
+  const ft=fTot(mo);
+  const lucro=ft.rec-total;
+  const lClass=lucro>=0?"positivo":"negativo";
+  let h=`<div class="sec-t">Despesas — ${MPT[mo]} ${ANO}</div>
+    <div class="lucro-card ${lClass}">
+      <div><div class="lucro-lbl">Lucro líquido</div><div class="lucro-val">${fR(lucro)}</div></div>
+      <div style="text-align:right;font-size:11px;color:var(--muted)">
+        <div>Receita: ${fR(ft.rec,true)}</div>
+        <div>Despesas: ${fR(total,true)}</div>
+      </div>
+    </div>
+    <div class="sec-t">Lançamentos</div>`;
+  if(!lista.length)h+=`<div style="text-align:center;color:var(--faint);font-size:12px;padding:20px 0;font-style:italic">Nenhuma despesa lançada</div>`;
+  lista.forEach((d,i)=>{
+    const idx=despesas.indexOf(d);
+    h+=`<div class="desp-card">
+      <div style="flex:1"><div class="desp-nome">${d.nome}</div><div class="desp-cat">${d.cat}</div></div>
+      <span class="desp-val">- ${fR(d.valor)}</span>
+      <button class="desp-del" onclick="delDesp(${idx})">×</button>
+    </div>`;
+  });
+  h+=`<div class="desp-form">
+    <div class="desp-form-title">+ Nova despesa</div>
+    <div class="fg">
+      <div class="ff full"><div class="fl">Descrição</div><input class="fi" id="dn" placeholder="Ex: Mensalidade academia"></div>
+      <div class="ff"><div class="fl">Categoria</div>
+        <select class="fs-el" id="dc">
+          <option>Academia</option><option>Material</option><option>Combustível</option>
+          <option>Marketing</option><option>Equipamento</option><option>Outro</option>
+        </select></div>
+      <div class="ff"><div class="fl">Valor (R$)</div><input class="fi" id="dv" type="number" placeholder="0"></div>
+    </div>
+    <button class="save-btn" style="margin-top:10px" onclick="addDesp()">Adicionar despesa</button>
+  </div>`;
+  document.getElementById("desp-content").innerHTML=h;
+}
+
+function addDesp(){
+  const nome=document.getElementById("dn")?.value.trim();
+  const cat=document.getElementById("dc")?.value;
+  const valor=parseFloat(document.getElementById("dv")?.value)||0;
+  if(!nome||!valor){toast("Preencha descrição e valor");return;}
+  despesas.push({nome,cat,valor,mes:curMes,ano:ANO,ts:Date.now()});
+  sv("despesas",despesas);renderDesp();toast("✓ Despesa adicionada");
+}
+
+function delDesp(i){
+  despesas.splice(i,1);sv("despesas",despesas);renderDesp();
+}
+
+// ── Aniversários do mês ──────────────────────────────────────
+function anivDoMes(mo){
+  return alunos.filter(a=>{
+    if(!a.nasc)return false;
+    const n=new Date(a.nasc);
+    return n.getMonth()===mo;
+  }).sort((a,b)=>{
+    return new Date(a.nasc).getDate()-new Date(b.nasc).getDate();
+  });
+}
+
+function abrirWppAniv(nome,tel){
+  const msg=encodeURIComponent(`🎂 Feliz aniversário, ${nome}! Que esse novo ciclo seja cheio de saúde, evolução e conquistas. Muito obrigado por confiar no meu trabalho. Conte comigo sempre! 💪`);
+  const num=tel?tel.replace(/\D/g,""):"";
+  const url=num?`https://wa.me/55${num}?text=${msg}`:`https://wa.me/?text=${msg}`;
+  window.open(url,"_blank");
+}
+
+function abrirWppCobranca(nome,tel,valor,mes){
+  const msg=encodeURIComponent(`Olá, ${nome}! Tudo bem? Passando para avisar que o pagamento de ${mes} (${fR(valor)}) ainda está em aberto. Qualquer dúvida é só falar! 😊`);
+  const num=tel?tel.replace(/\D/g,""):"";
+  const url=num?`https://wa.me/55${num}?text=${msg}`:`https://wa.me/?text=${msg}`;
+  window.open(url,"_blank");
+}
+
+// ── Histórico presença ───────────────────────────────────────
+function presencaAluno(aId){
+  const a=gA(aId);if(!a)return[];
+  const meses=[];
+  for(let m=0;m<12;m++){
+    let cnt=0;
+    const num=new Date(ANO,m+1,0).getDate();
+    for(let d=1;d<=num;d++){
+      const slots=regCache[dk(ANO,m,d)]||{};
+      Object.values(slots).forEach(nC=>{if(nC===a.nome_c)cnt++;});
+    }
+    meses.push({m,cnt});
+  }
+  return meses;
+}
+
+function renderPresenca(aId){
+  const dados=presencaAluno(aId);
+  const total=dados.reduce((s,d)=>s+d.cnt,0);
+  const comAulas=dados.filter(d=>d.cnt>0);
+  const media=comAulas.length?Math.round(total/comAulas.length):0;
+  const melhor=dados.reduce((a,b)=>b.cnt>a.cnt?b:a,dados[0]);
+  const maxC=Math.max(...dados.map(d=>d.cnt),1);
+  const bars=dados.map(d=>{
+    const pct=Math.round(d.cnt/maxC*100);
+    const cls=d.m===curMes?"cur":"old";
+    return`<div class="pres-bar ${cls}" style="height:${Math.max(pct,3)}%"><span class="pres-bar-lbl">${MSH[d.m]}</span></div>`;
+  }).join("");
+  return`<div class="pres-bar-wrap">${bars}</div><div class="pres-axis"></div>
+    <div class="pres-stats">
+      <div class="pres-stat"><div class="pres-stat-v">${total}</div><div class="pres-stat-l">Total ${ANO}</div></div>
+      <div class="pres-stat"><div class="pres-stat-v">${media}</div><div class="pres-stat-l">Média/mês</div></div>
+      <div class="pres-stat"><div class="pres-stat-v">${melhor.cnt}</div><div class="pres-stat-l">${MSH[melhor.m]} (melhor)</div></div>
+    </div>`;
+}
+
+
+// ── Horários 30/30 ───────────────────────────────────────────
+const H30=[];
+for(let h=6;h<=22;h++){H30.push(h+":00");if(h<22)H30.push(h+":30");}
+
+// ── Grade fixa ───────────────────────────────────────────────
+// grade[alunoId] = [ {dia:0-6, hora:"7:30", dur:60, desde:"2026-01-01"} ]
+// dia: 0=Dom,1=Seg,2=Ter,3=Qua,4=Qui,5=Sex,6=Sab
+// overrides[alunoId_YYYY_M_D] = {hora, dur} | "removed"
+let grade=ld("grade2",{});
+let overrides=ld("overrides2",{});
+
+const DIAS_GRADE=["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
+
+function saveGrade(){sv("grade2",grade);}
+function saveOvr(){sv("overrides2",overrides);}
+
+// Retorna aulas efetivas de um dia considerando grade + overrides
+function aulasEfetivas(ano,mes,dia){
+  const date=new Date(ano,mes,dia);
+  const wd=date.getDay();
+  const dateStr=`${ano}_${mes}_${dia}`;
+  const resultado=[];
+
+  alunos.forEach(a=>{
+    const slots=grade[a.id]||[];
+    slots.forEach((slot,si)=>{
+      // Verificar se slot está ativo nesta data
+      const desdeDate=slot.desde?new Date(slot.desde):new Date(ano,0,1);
+      const ateDate=slot.ate?new Date(slot.ate):new Date(2099,0,1);
+      if(date<desdeDate||date>ateDate)return;
+      if(slot.dia!==wd)return;
+
+      const ovrKey=`${a.id}_${dateStr}_${si}`;
+      const ovr=overrides[ovrKey];
+      if(ovr==="removed")return;
+      resultado.push({
+        alunoId:a.id,
+        nomeC:a.nome_c,
+        local:a.local,
+        hora:ovr?ovr.hora:slot.hora,
+        dur:ovr?ovr.dur:slot.dur,
+        slotIdx:si,
+        dateStr,
+        isOverride:!!ovr
+      });
+    });
+  });
+
+  // Registros manuais no regCache (aulas não da grade)
+  const regSlots=regCache[dk(ano,mes,dia)]||{};
+  Object.entries(regSlots).forEach(([si,nomeC])=>{
+    if(!nomeC)return;
+    const jaTemGrade=resultado.some(r=>r.nomeC===nomeC);
+    if(!jaTemGrade){
+      const a=gAN(nomeC);
+      resultado.push({
+        alunoId:a?a.id:"",
+        nomeC,
+        local:a?a.local:"FS",
+        hora:HORARIOS[parseInt(si)]||"?",
+        dur:60,
+        slotIdx:-1,
+        dateStr,
+        isManual:true
+      });
+    }
+  });
+
+  return resultado.sort((a,b)=>{
+    const toMin=h=>{const[hr,mn]=h.split(":").map(Number);return hr*60+(mn||0);};
+    return toMin(a.hora)-toMin(b.hora);
+  });
+}
+
+// ── Render Grade (configuração) ──────────────────────────────
+function renderGrade(){
+  const dias=DIAS_GRADE;
+  let h=`<div class="gsec">Grade de aulas por aluno</div>
+  <div style="font-size:12px;color:var(--muted);margin-bottom:14px">Defina os dias e horários fixos de cada aluno. O calendário preencherá automaticamente.</div>`;
+
+  alunos.filter(a=>!a.status||a.status==="ativo").forEach(a=>{
+    const slots=grade[a.id]||[];
+    const cl=a.local.toLowerCase();
+
+    // Preview dos slots ativos
+    const preview=slots.length?slots.map(s=>`<span class="ga-slot-tag ${cl}">${dias[s.dia]} ${s.hora} (${s.dur}min)</span>`).join("")
+      :`<span style="font-size:11px;color:var(--faint);font-style:italic">Sem grade definida</span>`;
+
+    h+=`<div class="ga-card">
+      <div class="ga-top">
+        <div class="ga-av" style="${avS(a.local)}">${ini(a.nome_c)}</div>
+        <span class="ga-name">${a.nome}</span>
+        <span class="ga-loc ${cl}">${a.local}</span>
+      </div>
+      <div class="gsec" style="margin-top:0;margin-bottom:8px">Dias da semana</div>
+      <div class="dias-wrap" id="dias-${a.id}">
+        ${[0,1,2,3,4,5,6].map(wd=>`<button class="dia-btn" data-aid="${a.id}" data-wd="${wd}" onclick="toggleDia('${a.id}',${wd})">${dias[wd]}</button>`).join("")}
+      </div>
+      <div class="ga-selects">
+        <div class="ga-select-wrap">
+          <div class="ga-select-lbl">Horário</div>
+          <select class="ga-sel" id="gh-${a.id}">
+            ${H30.map(h=>`<option value="${h}">${h}</option>`).join("")}
+          </select>
+        </div>
+        <div class="ga-select-wrap">
+          <div class="ga-select-lbl">Duração</div>
+          <select class="ga-sel" id="gd-${a.id}">
+            <option value="30">30min</option>
+            <option value="45">45min</option>
+            <option value="60" selected>1h</option>
+            <option value="75">1h15</option>
+            <option value="90">1h30</option>
+            <option value="120">2h</option>
+          </select>
+        </div>
+        <button class="ga-save-btn" onclick="addSlotGrade('${a.id}')">+ Adicionar</button>
+      </div>
+      <div class="ga-slots-preview" id="gp-${a.id}">${preview}</div>
+    </div>`;
+  });
+
+  document.getElementById("grade-content").innerHTML=h;
+}
+
+let _diasSel={};
+function toggleDia(aid,wd){
+  if(!_diasSel[aid])_diasSel[aid]=new Set();
+  if(_diasSel[aid].has(wd))_diasSel[aid].delete(wd);
+  else _diasSel[aid].add(wd);
+  const btn=document.querySelector(`[data-aid="${aid}"][data-wd="${wd}"]`);
+  if(btn)btn.classList.toggle("sel",_diasSel[aid].has(wd));
+}
+
+function addSlotGrade(aid){
+  if(!_diasSel[aid]||!_diasSel[aid].size){toast("Selecione pelo menos 1 dia");return;}
+  const hora=document.getElementById("gh-"+aid)?.value||"7:00";
+  const dur=parseInt(document.getElementById("gd-"+aid)?.value)||60;
+  if(!grade[aid])grade[aid]=[];
+  const hoje=TODAY.toISOString().split("T")[0];
+  _diasSel[aid].forEach(wd=>{
+    // Remove slot existente com mesmo dia
+    grade[aid]=grade[aid].filter(s=>s.dia!==wd);
+    grade[aid].push({dia:wd,hora,dur,desde:hoje});
+  });
+  saveGrade();
+  _diasSel[aid]=new Set();
+  // Reset visual
+  document.querySelectorAll(`[data-aid="${aid}"]`).forEach(b=>b.classList.remove("sel"));
+  renderGrade();
+  toast("✓ Grade salva");
+}
+
+function removerSlotGrade(aid,idx){
+  if(!grade[aid])return;
+  grade[aid].splice(idx,1);
+  saveGrade();renderGrade();toast("Slot removido");
+}
+
+// ── Calendário com grade ──────────────────────────────────────
+let _editCtx=null;
+let _editScope="day";
+
+function selScope(s){
+  _editScope=s;
+  document.getElementById("scope-day").classList.toggle("sel",s==="day");
+  document.getElementById("scope-fwd").classList.toggle("sel",s==="fwd");
+}
+
+function openEditModal(ctx){
+  _editCtx=ctx;_editScope="day";
+  selScope("day");
+  const{alunoId,nomeC,hora,dur,slotIdx,dateStr,dia,mes,ano}=ctx;
+  const pts=dateStr.split("_");
+  document.getElementById("em-title").textContent=`Aula de ${nomeC}`;
+  document.getElementById("em-sub").textContent=`${pts[2]}/${String(parseInt(pts[1])+1).padStart(2,"0")}/${pts[0]}`;
+
+  // Populate aluno select
+  const alSel=document.getElementById("em-aluno");
+  alSel.innerHTML=alunos.map(a=>`<option value="${a.id}" ${a.id===alunoId?"selected":""}>${a.nome_c} — ${a.nome.split(" ")[0]}</option>`).join("");
+
+  // Populate hora select
+  const hSel=document.getElementById("em-hora");
+  hSel.innerHTML=H30.map(h=>`<option value="${h}" ${h===hora?"selected":""}>${h}</option>`).join("");
+
+  // Populate dur select
+  const dSel=document.getElementById("em-dur");
+  [...dSel.options].forEach(o=>o.selected=parseInt(o.value)===dur);
+
+  // Del btn
+  const delBtn=document.getElementById("em-del-btn");
+  delBtn.onclick=()=>deleteAula(ctx);
+
+  // Hide scope if manual
+  document.querySelector(".edit-scope").style.display=slotIdx===-1?"none":"flex";
+  document.getElementById("scope-fwd").style.display=slotIdx===-1?"none":"flex";
+
+  document.getElementById("edit-modal-bg").classList.add("open");
+}
+
+function closeEditModal(){
+  document.getElementById("edit-modal-bg").classList.remove("open");
+  _editCtx=null;
+}
+
+async function confirmEdit(){
+  if(!_editCtx)return;
+  const novaHora=document.getElementById("em-hora").value;
+  const novaDur=parseInt(document.getElementById("em-dur").value);
+  const novoAluno=document.getElementById("em-aluno").value;
+  const{alunoId,slotIdx,dateStr,ano,mes,dia}=_editCtx;
+
+  if(_editScope==="day"||slotIdx===-1){
+    // Override só neste dia
+    if(slotIdx>=0){
+      const ovrKey=`${alunoId}_${dateStr}_${slotIdx}`;
+      overrides[ovrKey]={hora:novaHora,dur:novaDur};
+      saveOvr();
+    } else {
+      // Manual: update regCache
+      // find old slot index
+      const slots=regCache[dateStr]||{};
+      // just add to regCache with new time approach — simplified
+    }
+  } else {
+    // Alterar grade a partir desta data
+    if(slotIdx>=0&&grade[alunoId]&&grade[alunoId][slotIdx]){
+      const slot=grade[alunoId][slotIdx];
+      // Expire current slot at this date
+      const dateObj=new Date(parseInt(ano),parseInt(mes),parseInt(dia));
+      const prevDate=new Date(dateObj-86400000);
+      slot.ate=prevDate.toISOString().split("T")[0];
+      // Add new slot from this date
+      grade[alunoId].push({
+        dia:slot.dia,
+        hora:novaHora,
+        dur:novaDur,
+        desde:new Date(parseInt(ano),parseInt(mes),parseInt(dia)).toISOString().split("T")[0]
+      });
+      saveGrade();
+    }
+  }
+  closeEditModal();
+  renderCal();
+  toast("✓ Aula atualizada");
+}
+
+async function deleteAula(ctx){
+  const{alunoId,slotIdx,dateStr,ano,mes,dia}=ctx;
+  if(slotIdx>=0){
+    const ovrKey=`${alunoId}_${dateStr}_${slotIdx}`;
+    overrides[ovrKey]="removed";
+    saveOvr();
+  } else {
+    // Remove from regCache
+    const slots=regCache[dateStr]||{};
+    const entry=Object.entries(slots).find(([,nC])=>nC===ctx.nomeC);
+    if(entry){
+      delete regCache[dateStr][entry[0]];
+      await db.from("gestao_registro").delete().eq("ano",parseInt(ano)).eq("mes",parseInt(mes)).eq("dia",parseInt(dia)).eq("slot",parseInt(entry[0]));
+    }
+  }
+  closeEditModal();
+  renderCal();
+  toast("Aula removida");
+}
+
+// Adicionar aula manual num dia (botão +)
+let _addCtx=null;
+function openAddAula(dateStr){
+  _addCtx=dateStr;
+  const pts=dateStr.split("_");
+  modal.dk=dateStr;modal.si=-1;
+  document.getElementById("m-title").textContent="Adicionar aula";
+  document.getElementById("m-sub").textContent=`${p2(pts[2])}/${p2(parseInt(pts[1])+1)} — escolha o horário`;
+  document.getElementById("m-search").value="";
+  renderML("");
+  document.getElementById("modal-bg").classList.add("open");
+}
+
+
 async function loadAll(){
   try{
     const[{data:al},{data:regs},{data:pags}]=await Promise.all([
@@ -375,7 +944,7 @@ function buildHdr(){
   document.getElementById("hdr-kpis").innerHTML=["FS","IC","PR","CD"].map(s=>`<div class="hkpi ${s.toLowerCase()}"><div class="hkpi-v">${t[s]}</div><div class="hkpi-l">${s}</div></div>`).join("")+`<div class="hkpi rec"><div class="hkpi-v" style="font-size:12px">${fR(ft.rec,true)}</div><div class="hkpi-l">Receita</div></div>`;
   document.getElementById("month-strip").innerHTML=MSH.map((m,i)=>`<button class="m-tab${i===curMes?" active":""}" onclick="setMes(${i})">${m}</button>`).join("");
 }
-function setMes(i){curMes=i;selDay=null;buildHdr();const sc=document.querySelector(".screen.active");if(sc){const id=sc.id.replace("s-","");if(id==="home")renderHome();else if(id==="reg")renderCal();else if(id==="fin")renderFin();else if(id==="dash")renderDash();}}
+function setMes(i){curMes=i;selDay=null;buildHdr();const sc=document.querySelector(".screen.active");if(sc){const id=sc.id.replace("s-","");if(id==="home")renderHome();else if(id==="reg")renderCal();else if(id==="fin")renderFin();else if(id==="grade")renderGrade();else if(id==="desp")renderDesp();else if(id==="dash")renderDash();}}
 function renderHome(){
   const ft=fTot(curMes),t=mTot(curMes);let alerts="";
   const atr=alunos.filter(a=>{const p=pagCache[`${a.id}_${ANO}_${curMes}`];return p&&p.status==="atrasado";});
@@ -386,6 +955,27 @@ function renderHome(){
   const tdA=HORARIOS.map((h,i)=>({h,nC:tdS[i]||""})).filter(s=>s.nC);
   const cbars=MSH.map((m,mi)=>({m,rec:fTot(mi).rec,mi}));
   const maxR=Math.max(...cbars.map(b=>b.rec),1);
+  
+  // Aniversários do mês
+  const anivMes=anivDoMes(curMes);
+  let anivMesHTML="";
+  if(anivMes.length){
+    const rows=anivMes.map(a=>{
+      const n=new Date(a.nasc);
+      const dia=p2(n.getDate());
+      const isHoje=n.getDate()===TODAY.getDate()&&curMes===TODAY.getMonth();
+      return`<div class="aniv-mes-row">
+        <div class="aniv-mes-av" style="${avS(a.local)}">${ini(a.nome_c)}</div>
+        <div class="aniv-mes-info">
+          <div class="aniv-mes-nome">${a.nome.split(" ")[0]} ${isHoje?"🎂":""}</div>
+          <div class="aniv-mes-data">dia ${dia} · ${a.prof||a.local}</div>
+        </div>
+        <button class="aniv-mes-btn" onclick="abrirWppAniv('${a.nome.split(" ")[0]}','${a.tel||""}')">WhatsApp</button>
+      </div>`;
+    }).join("");
+    anivMesHTML=`<div class="aniv-mes-card"><div class="aniv-mes-title">🎂 Aniversários de ${MPT[curMes]}</div>${rows}</div>`;
+  }
+
   document.getElementById("home-content").innerHTML=`
     <div class="greeting">Olá, <span>Léo</span> 👋</div>
     <div class="greeting-sub">${MPT[curMes]} ${ANO} · ${t.total} aulas registradas</div>
@@ -399,6 +989,7 @@ function renderHome(){
       <div class="fmc pend"><div class="fmc-v">${fR(ft.pend,true)}</div><div class="fmc-l">Pendente</div></div>
       <div class="fmc atras"><div class="fmc-v">${fR(ft.atras,true)}</div><div class="fmc-l">Atrasado</div></div>
     </div>
+    ${anivMesHTML}
     <div class="chart-card">
       <div class="chart-title">Receita ${ANO}</div>
       <div class="chart-bars">${cbars.map(b=>{const pct=Math.round(b.rec/maxR*100);const cl=b.rec>0?(b.mi===curMes?"cur":"filled"):"";return`<div class="cb ${cl}" style="height:${Math.max(pct,3)}%"><span class="cb-label">${MSH[b.mi]}</span></div>`;}).join("")}</div>
@@ -410,13 +1001,32 @@ function renderCal(){
   const firstDay=new Date(ANO,curMes,1).getDay();
   let ddHTML="";
   if(selDay){
-    const key=dk(ANO,curMes,selDay);const slots=regCache[key]||{};
+    const dateStr=dk(ANO,curMes,selDay);
+    const aulas=aulasEfetivas(ANO,curMes,selDay);
     const tots={FS:0,IC:0,PR:0,CD:0,total:0};
-    HORARIOS.forEach((_,i)=>{const nC=slots[i];if(nC){const a=gAN(nC);if(a&&tots[a.local]!==undefined){tots[a.local]++;tots.total++;}}});
+    aulas.forEach(au=>{if(tots[au.local]!==undefined){tots[au.local]++;tots.total++;}});
     const badges=LOCS.filter(s=>tots[s]>0).map(s=>`<span class="dd-badge ${s.toLowerCase()}">${s} ${tots[s]}</span>`).join("");
-    const sH=HORARIOS.map((h,i)=>{const nC=slots[i]||"";const cl=nC?lc(nC):"";return`<div class="slot-q"><span class="sq-time">${h}</span><button class="sq-btn${nC?" filled "+cl:""}" onclick="openM('${key}',${i})">${nC?`<div class="sq-dot ${cl}"></div><span class="sq-name">${nC}</span><button class="sq-del" onclick="event.stopPropagation();clrD('${key}',${i},${selDay})">×</button>`:`<span class="sq-empty">+ aluno</span>`}</button></div>`;}).join("");
-    ddHTML=`<div class="day-detail"><div class="dd-title"><span>${selDay}/${p2(curMes+1)} · <span style="color:var(--g1)">${tots.total} aula${tots.total!==1?"s":""}</span></span><div class="dd-badges">${badges}</div><button class="dd-close" onclick="selDay=null;renderCal()">×</button></div>${sH}</div>`;
+
+    const blocos=aulas.map(au=>{
+      const cl=au.local.toLowerCase();
+      return`<div class="cal-bloco ${cl}" onclick="openEditModal({alunoId:'${au.alunoId}',nomeC:'${au.nomeC}',hora:'${au.hora}',dur:${au.dur},slotIdx:${au.slotIdx},dateStr:'${au.dateStr}',ano:${ANO},mes:${curMes},dia:${selDay}})">
+        <div class="bloco-hora">${au.hora}</div>
+        <div class="bloco-nome">${au.nomeC}</div>
+        <div class="bloco-dur">${au.dur}min · ${au.local}</div>
+      </div>`;
+    }).join("");
+
+    ddHTML=`<div class="day-detail">
+      <div class="dd-title">
+        <span>${selDay}/${p2(curMes+1)} · <span style="color:var(--g1)">${tots.total} aula${tots.total!==1?"s":""}</span></span>
+        <div class="dd-badges">${badges}</div>
+        <button class="dd-close" onclick="selDay=null;renderCal()">×</button>
+      </div>
+      ${blocos||`<div style="text-align:center;color:var(--faint);font-size:12px;padding:12px 0;font-style:italic">Nenhuma aula neste dia</div>`}
+      <button class="dd-add-btn" onclick="openAddAula('${dateStr}')">+ Adicionar aula</button>
+    </div>`;
   }
+
   let grid="";
   for(let i=0;i<firstDay;i++)grid+=`<div class="cal-day empty"></div>`;
   for(let d=1;d<=num;d++){
@@ -424,12 +1034,12 @@ function renderCal(){
     const isW=wd===0||wd===6;
     const isT=d===TODAY.getDate()&&curMes===TODAY.getMonth();
     const isSel=d===selDay;
-    const key=dk(ANO,curMes,d);const slots=regCache[key]||{};
-    const aulas=Object.values(slots).filter(Boolean);
-    const dots=aulas.slice(0,4).map(nC=>{const a=gAN(nC);return a?`<div class="cdot ${a.local.toLowerCase()}"></div>`:""}).join("");
+    const aulas=aulasEfetivas(ANO,curMes,d);
+    const dots=aulas.slice(0,4).map(au=>`<div class="cdot ${au.local.toLowerCase()}"></div>`).join("");
     const cls=`cal-day${isW?" wknd":""}${isT?" today":""}${isSel&&!isT?" sel":""}${aulas.length?" has-a":""}`;
     grid+=`<div class="${cls}" onclick="${isW?"":"selDay="+d+";renderCal()"}"><span class="cal-day-num">${d}</span>${aulas.length?`<div class="cal-dots">${dots}</div><span class="cal-cnt">${aulas.length}</span>`:""}</div>`;
   }
+
   document.getElementById("cal-content").innerHTML=`
     <div class="cal-header">
       <div class="cal-title">${MPT[curMes]} ${ANO}</div>
@@ -451,9 +1061,9 @@ function renderML(f){const fl=f.toUpperCase();const list=alunos.filter(a=>!fl||a
 async function selA(nC){const pts=modal.dk.split("_");const ano=parseInt(pts[0]),mes=parseInt(pts[1]),dia=parseInt(pts[2]);if(!regCache[modal.dk])regCache[modal.dk]={};regCache[modal.dk][modal.si]=nC;document.getElementById("modal-bg").classList.remove("open");renderCal();buildHdr();if(document.getElementById("s-home").classList.contains("active"))renderHome();toast(`${nC} ✓`);showSync();await db.from("gestao_registro").upsert({ano,mes,dia,slot:modal.si,nome_c:nC},{onConflict:"ano,mes,dia,slot"});}
 async function clearSlot(){const pts=modal.dk.split("_");const ano=parseInt(pts[0]),mes=parseInt(pts[1]),dia=parseInt(pts[2]);if(regCache[modal.dk])delete regCache[modal.dk][modal.si];document.getElementById("modal-bg").classList.remove("open");renderCal();buildHdr();await db.from("gestao_registro").delete().eq("ano",ano).eq("mes",mes).eq("dia",dia).eq("slot",modal.si);}
 async function clrD(key,si,dia){const pts=key.split("_");const ano=parseInt(pts[0]),mes=parseInt(pts[1]);if(regCache[key])delete regCache[key][si];renderCal();buildHdr();await db.from("gestao_registro").delete().eq("ano",ano).eq("mes",mes).eq("dia",dia).eq("slot",si);}
-function renderAl(f=""){const fl=f.toUpperCase();const list=f?alunos.filter(a=>a.nome.toUpperCase().includes(fl)||a.nome_c.includes(fl)):alunos;document.getElementById("al-content").innerHTML=list.map(a=>`<div class="al-card" onclick="openF('${a.id}')"><div class="al-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div style="flex:1"><div class="al-name">${a.nome}</div><div class="al-sub">${LNOME[a.local]} · ${fR(a.valor_ref)}/mês · ${a.obj||""}</div></div><span class="al-loc ${a.local.toLowerCase()}">${a.local}</span></div>`).join("")+`<button class="add-fab" onclick="novA()">+</button>`;}
+function renderAl(f=""){const fl=f.toUpperCase();const list=f?alunos.filter(a=>a.nome.toUpperCase().includes(fl)||a.nome_c.includes(fl)):alunos;document.getElementById("al-content").innerHTML=list.map(a=>`<div class="al-card" onclick="openF('${a.id}')"><div class="al-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div style="flex:1"><div class="al-name">${a.nome}</div><div style="display:flex;align-items:center;gap:6px;margin-top:3px"><span class="status-badge ${a.status||'ativo'}">${(a.status||'ativo').charAt(0).toUpperCase()+(a.status||'ativo').slice(1)}</span><span class="al-sub">${LNOME[a.local]} · ${fR(a.valor_ref)}/mês · ${a.obj||""}</span></div></div><span class="al-loc ${a.local.toLowerCase()}">${a.local}</span></div>`).join("")+`<button class="add-fab" onclick="novA()">+</button>`;}
 function filterAl(v){renderAl(v);}
-const FTABS=[{k:"dados",l:"Dados"},{k:"saude",l:"Saúde"},{k:"medidas",l:"Medidas"},{k:"objetivo",l:"Objetivo"}];
+const FTABS=[{k:"dados",l:"Dados"},{k:"saude",l:"Saúde"},{k:"medidas",l:"Medidas"},{k:"objetivo",l:"Objetivo"},{k:"presenca",l:"Presença"}];
 function openF(id){fId=id;fTab="dados";const a=gA(id);document.getElementById("f-av").style.cssText=avS(a?a.local:"FS");document.getElementById("f-av").textContent=a?ini(a.nome_c):"";document.getElementById("f-title").textContent=a?a.nome:"Novo Aluno";document.getElementById("f-sub").textContent=a?`${LNOME[a.local]} · ${fR(a.valor_ref)}/mês`:"";document.getElementById("ficha-tabs").innerHTML=FTABS.map((t,i)=>`<button class="ftab${i===0?" active":""}" onclick="swFT('${t.k}',this)">${t.l}</button>`).join("");renderFB();document.getElementById("ficha-modal").classList.add("open");}
 async function novA(){const a={id:uid(),nome:"Novo Aluno",nome_c:"NOVO",local:"FS",valor_ref:0,tel:"",email:"",nasc:null,prof:"",obj:"",obj_s:"",saude:{},medidas:{},medidas_hist:[],ativo:true};const{error}=await db.from("gestao_alunos").insert(a);if(!error){alunos.push(a);openF(a.id);}else toast("Erro ao criar aluno");}
 function closeF(){document.getElementById("ficha-modal").classList.remove("open");}
@@ -480,7 +1090,14 @@ function buildEvoChart(hist,field,label){
 }
 function renderFB(){
   const a=gA(fId);if(!a)return;const b=document.getElementById("ficha-body");
-  if(fTab==="dados"){b.innerHTML=`<div class="fsec">Identificação</div><div class="fg"><div class="ff full"><div class="fl">Nome completo</div><input class="fi" id="fn" value="${a.nome||""}"></div><div class="ff"><div class="fl">Apelido no registro</div><input class="fi" id="fnC" value="${a.nome_c||""}" style="text-transform:uppercase"></div><div class="ff"><div class="fl">WhatsApp</div><input class="fi" id="ftel" value="${a.tel||""}" type="tel"></div><div class="ff"><div class="fl">E-mail</div><input class="fi" id="femail" value="${a.email||""}" type="email"></div><div class="ff"><div class="fl">Nascimento</div><input class="fi" id="fnasc" value="${a.nasc||""}" type="date"></div><div class="ff"><div class="fl">Profissão</div><input class="fi" id="fprof" value="${a.prof||""}"></div></div><div class="fsec">Financeiro</div><div class="fg"><div class="ff"><div class="fl">Local</div><select class="fs-el" id="floc">${LOCS.map(l=>`<option value="${l}" ${a.local===l?"selected":""}>${l} — ${LNOME[l]}</option>`).join("")}</select></div><div class="ff"><div class="fl">Valor referência (R$)</div><input class="fi" id="fval" value="${a.valor_ref||""}" type="number"></div></div><button class="save-btn" onclick="savD()">Salvar dados</button><button class="del-btn" onclick="delA('${a.id}')">Remover aluno</button>`;}
+  if(fTab==="dados"){b.innerHTML=`<div class="fsec">Identificação</div><div class="fg"><div class="ff full"><div class="fl">Nome completo</div><input class="fi" id="fn" value="${a.nome||""}"></div><div class="ff"><div class="fl">Apelido no registro</div><input class="fi" id="fnC" value="${a.nome_c||""}" style="text-transform:uppercase"></div><div class="ff"><div class="fl">WhatsApp</div><input class="fi" id="ftel" value="${a.tel||""}" type="tel"></div><div class="ff"><div class="fl">E-mail</div><input class="fi" id="femail" value="${a.email||""}" type="email"></div><div class="ff"><div class="fl">Nascimento</div><input class="fi" id="fnasc" value="${a.nasc||""}" type="date"></div><div class="ff"><div class="fl">Profissão</div><input class="fi" id="fprof" value="${a.prof||""}"></div></div><div class="fsec">Financeiro</div><div class="fg"><div class="ff"><div class="fl">Status</div>
+        <select class="fs-el" id="fstatus">
+          <option value="ativo" ${(a.status||"ativo")==="ativo"?"selected":""}>Ativo</option>
+          <option value="pausado" ${a.status==="pausado"?"selected":""}>Pausado</option>
+          <option value="ferias" ${a.status==="ferias"?"selected":""}>Férias</option>
+          <option value="cancelado" ${a.status==="cancelado"?"selected":""}>Cancelado</option>
+        </select></div>
+      <div class="ff"><div class="fl">Local</div><select class="fs-el" id="floc">${LOCS.map(l=>`<option value="${l}" ${a.local===l?"selected":""}>${l} — ${LNOME[l]}</option>`).join("")}</select></div><div class="ff"><div class="fl">Valor referência (R$)</div><input class="fi" id="fval" value="${a.valor_ref||""}" type="number"></div></div><button class="save-btn" onclick="savD()">Salvar dados</button><button class="del-btn" onclick="delA('${a.id}')">Remover aluno</button>`;}
   else if(fTab==="saude"){const s=a.saude||{};b.innerHTML=`<div class="fsec">Histórico clínico</div><div class="fg"><div class="ff full"><div class="fl">Doenças / condições</div><textarea class="fta" id="sd">${s.doencas||""}</textarea></div><div class="ff full"><div class="fl">Medicamentos</div><textarea class="fta" id="sme">${s.med||""}</textarea></div><div class="ff full"><div class="fl">Lesões / limitações</div><textarea class="fta" id="sl">${s.lesoes||""}</textarea></div><div class="ff full"><div class="fl">Cirurgias</div><textarea class="fta" id="sc">${s.cirurgia||""}</textarea></div><div class="ff full"><div class="fl">Observações</div><textarea class="fta" id="so">${s.obs||""}</textarea></div></div><button class="save-btn" onclick="savS()">Salvar saúde</button>`;}
   else if(fTab==="medidas"){
     const m=a.medidas||{},hist=a.medidas_hist||[];
@@ -489,8 +1106,12 @@ function renderFB(){
     b.innerHTML=`<div class="fsec">Nova avaliação</div><div class="fg"><div class="ff"><div class="fl">Peso (kg)</div><input class="fi" id="mp" value="${m.peso||""}" type="number" step="0.1" oninput="cIMC()"></div><div class="ff"><div class="fl">Altura (cm)</div><input class="fi" id="ma" value="${m.altura||""}" type="number" oninput="cIMC()"></div><div class="ff"><div class="fl">% Gordura</div><input class="fi" id="mg" value="${m.gord||""}" type="number" step="0.1"></div><div class="ff"><div class="fl">IMC</div><input class="fi" id="mi" value="${imc}" readonly style="opacity:.5"></div><div class="ff"><div class="fl">Cintura (cm)</div><input class="fi" id="mci" value="${m.cintura||""}" type="number" step="0.1"></div><div class="ff"><div class="fl">Quadril (cm)</div><input class="fi" id="mq" value="${m.quadril||""}" type="number" step="0.1"></div><div class="ff full"><div class="fl">Data</div><input class="fi" id="md" value="${m.data||new Date().toISOString().split("T")[0]}" type="date"></div></div><button class="save-btn" onclick="savM()">Salvar e adicionar ao histórico</button>${charts?`<div class="fsec">Evolução</div>${charts}`:""}${hist.length?`<div class="fsec">Histórico</div>${hist.slice().reverse().map((h,i)=>`<div class="mh-entry"><div class="mh-date">${h.data||"–"}</div><div class="mh-chips">${h.peso?`<span class="mh-chip">⚖️ ${h.peso}kg</span>`:""} ${h.gord?`<span class="mh-chip">🔥 ${h.gord}%</span>`:""} ${h.imc?`<span class="mh-chip">IMC ${h.imc}</span>`:""}</div><button class="mh-del" onclick="delMed(${hist.length-1-i})">×</button></div>`).join("")}`:""}`;}
   else if(fTab==="objetivo"){b.innerHTML=`<div class="fsec">Objetivo e treino</div><div class="fg"><div class="ff"><div class="fl">Objetivo principal</div><select class="fs-el" id="oo">${["Emagrecimento","Ganho de massa","Condicionamento","Saúde / qualidade de vida","Hipertrofia","Reabilitação","Performance","Prep. esporte","Outro"].map(v=>`<option value="${v}" ${a.obj===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff"><div class="fl">Objetivo secundário</div><input class="fi" id="os" value="${a.obj_s||""}"></div><div class="ff"><div class="fl">Frequência/semana</div><select class="fs-el" id="of">${["1x","2x","3x","4x","5x"].map(v=>`<option value="${v}" ${a.freq===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff"><div class="fl">Nível</div><select class="fs-el" id="on">${["Sedentário","Iniciante","Intermediário","Avançado"].map(v=>`<option value="${v}" ${a.nivel===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff full"><div class="fl">Descrição</div><textarea class="fta" id="od">${a.obj_d||""}</textarea></div><div class="ff full"><div class="fl">Observações do treino</div><textarea class="fta" id="ob">${a.obj_o||""}</textarea></div></div><button class="save-btn" onclick="savO()">Salvar objetivo</button>`;}
 }
-function cIMC(){const p=parseFloat(document.getElementById("mp")?.value);const h=parseFloat(document.getElementById("ma")?.value);const el=document.getElementById("mi");if(el&&p&&h)el.value=(p/((h/100)**2)).toFixed(1);}
-async function savD(){const a=gA(fId);if(!a)return;a.nome=document.getElementById("fn").value.trim()||a.nome;a.nome_c=document.getElementById("fnC").value.trim().toUpperCase()||a.nome_c;a.tel=document.getElementById("ftel").value;a.email=document.getElementById("femail").value;a.nasc=document.getElementById("fnasc").value||null;a.prof=document.getElementById("fprof").value;a.local=document.getElementById("floc").value;a.valor_ref=parseFloat(document.getElementById("fval").value)||0;document.getElementById("f-title").textContent=a.nome;document.getElementById("f-sub").textContent=`${LNOME[a.local]} · ${fR(a.valor_ref)}/mês`;showSync();await db.from("gestao_alunos").update({nome:a.nome,nome_c:a.nome_c,tel:a.tel,email:a.email,nasc:a.nasc,prof:a.prof,local:a.local,valor_ref:a.valor_ref,atualizado_em:new Date()}).eq("id",fId);renderAl();buildHdr();toast("✓ Dados salvos");}
+else if(fTab==="presenca"){
+    b.innerHTML=`<div class="fsec">Frequência ${ANO}</div>${renderPresenca(fId)}`;
+  }
+  function cIMC(){const p=parseFloat(document.getElementById("mp")?.value);const h=parseFloat(document.getElementById("ma")?.value);const el=document.getElementById("mi");if(el&&p&&h)el.value=(p/((h/100)**2)).toFixed(1);}
+async function savD(){const a=gA(fId);if(!a)return;a.nome=document.getElementById("fn").value.trim()||a.nome;a.nome_c=document.getElementById("fnC").value.trim().toUpperCase()||a.nome_c;a.tel=document.getElementById("ftel").value;a.email=document.getElementById("femail").value;a.nasc=document.getElementById("fnasc").value||null;a.prof=document.getElementById("fprof").value;a.status=document.getElementById("fstatus")?.value||"ativo";
+  a.local=document.getElementById("floc").value;a.valor_ref=parseFloat(document.getElementById("fval").value)||0;document.getElementById("f-title").textContent=a.nome;document.getElementById("f-sub").textContent=`${LNOME[a.local]} · ${fR(a.valor_ref)}/mês`;showSync();await db.from("gestao_alunos").update({nome:a.nome,nome_c:a.nome_c,tel:a.tel,email:a.email,nasc:a.nasc,prof:a.prof,local:a.local,valor_ref:a.valor_ref,status:a.status,atualizado_em:new Date()}).eq("id",fId);renderAl();buildHdr();toast("✓ Dados salvos");}
 async function savS(){const a=gA(fId);if(!a)return;a.saude={doencas:document.getElementById("sd").value,med:document.getElementById("sme").value,lesoes:document.getElementById("sl").value,cirurgia:document.getElementById("sc").value,obs:document.getElementById("so").value};showSync();await db.from("gestao_alunos").update({saude:a.saude,atualizado_em:new Date()}).eq("id",fId);toast("✓ Saúde salva");}
 async function savM(){const a=gA(fId);if(!a)return;const n={peso:document.getElementById("mp").value,altura:document.getElementById("ma").value,gord:document.getElementById("mg").value,cintura:document.getElementById("mci").value,quadril:document.getElementById("mq").value,data:document.getElementById("md").value,imc:document.getElementById("mi").value};a.medidas=n;if(!a.medidas_hist)a.medidas_hist=[];a.medidas_hist.push({...n,ts:Date.now()});showSync();await db.from("gestao_alunos").update({medidas:a.medidas,medidas_hist:a.medidas_hist,atualizado_em:new Date()}).eq("id",fId);renderFB();toast("✓ Medidas salvas");}
 async function delMed(i){const a=gA(fId);if(!a||!a.medidas_hist)return;a.medidas_hist.splice(i,1);await db.from("gestao_alunos").update({medidas_hist:a.medidas_hist}).eq("id",fId);renderFB();}
@@ -499,7 +1120,7 @@ async function delA(id){if(!confirm("Remover este aluno?"))return;await db.from(
 function renderFin(){
   const key=`${ANO}_${curMes}`;const ft=fTot(curMes);
   let h=`<div class="sec-t">Receita — ${MPT[curMes]} ${ANO}</div><div class="fin-sum"><div class="fsc rec"><div class="fsc-v">${fR(ft.rec,true)}</div><div class="fsc-l">Recebido</div></div><div class="fsc pend"><div class="fsc-v">${fR(ft.pend,true)}</div><div class="fsc-l">Pendente</div></div><div class="fsc atras"><div class="fsc-v">${fR(ft.atras,true)}</div><div class="fsc-l">Atrasado</div></div></div><button class="export-btn" onclick="expPDF()">📄 Exportar relatório ${MSH[curMes]} em PDF</button><div style="height:14px"></div><div class="sec-t">Pagamentos</div>`;
-  alunos.forEach(a=>{const pk=`${a.id}_${ANO}_${curMes}`;const p=pagCache[pk]||{status:"pendente",nf:false,valor:a.valor_ref};const val=p.valor!=null?p.valor:a.valor_ref;h+=`<div class="pay-card"><div class="pay-top"><div class="pay-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div class="pay-info"><div class="pay-name">${a.nome}</div><div class="pay-meta">${a.local} · ref: ${fR(a.valor_ref)}</div></div><button class="pay-status ${p.status}" onclick="cycS('${a.id}')">${p.status}</button></div><div class="pay-bottom"><label class="nf-check ${p.nf?"done":""}"><input type="checkbox" ${p.nf?"checked":""} onchange="togNF('${a.id}',this.checked)"> NF emitida</label><input class="pay-val-in" type="number" value="${val}" onchange="savV('${a.id}',this.value)"><button class="recibo-btn" onclick="reciboAluno('${a.id}')">🧾 Recibo</button></div></div>`;});
+  alunos.forEach(a=>{const pk=`${a.id}_${ANO}_${curMes}`;const p=pagCache[pk]||{status:"pendente",nf:false,valor:a.valor_ref};const val=p.valor!=null?p.valor:a.valor_ref;h+=`<div class="pay-card"><div class="pay-top"><div class="pay-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div class="pay-info"><div class="pay-name">${a.nome}</div><div class="pay-meta">${a.local} · ref: ${fR(a.valor_ref)}</div></div><button class="pay-status ${p.status}" onclick="cycS('${a.id}')">${p.status}</button></div><div class="pay-bottom"><label class="nf-check ${p.nf?"done":""}"><input type="checkbox" ${p.nf?"checked":""} onchange="togNF('${a.id}',this.checked)"> NF emitida</label><input class="pay-val-in" type="number" value="${val}" onchange="savV('${a.id}',this.value)"><button class="recibo-btn" onclick="reciboAluno('${a.id}')">🧾 Recibo</button><button class="wpp-btn" onclick="abrirWppCobranca('${a.nome.split(\" \")[0]}','${a.tel||""}',${val},'${MPT[curMes]}')">💬 WhatsApp</button></div></div>`;});
   document.getElementById("fin-content").innerHTML=h;
 }
 async function cycS(aId){const pk=`${aId}_${ANO}_${curMes}`;const a=gA(aId);if(!pagCache[pk])pagCache[pk]={status:"pendente",nf:false,valor:a?a.valor_ref:0};const o=["pendente","pago","atrasado"];pagCache[pk].status=o[(o.indexOf(pagCache[pk].status)+1)%o.length];showSync();await db.from("gestao_pagamentos").upsert({id:pk,aluno_id:aId,ano:ANO,mes:curMes,status:pagCache[pk].status,valor:pagCache[pk].valor,nf:pagCache[pk].nf},{onConflict:"aluno_id,ano,mes"});renderFin();buildHdr();if(document.getElementById("s-home").classList.contains("active"))renderHome();}
@@ -566,7 +1187,7 @@ function renderDash(){
   if(anivs.length){h+=`<div class="sec">Aniversários próximos</div>`;anivs.forEach(a=>{const n=new Date(a.nasc);const ty=new Date(ANO,n.getMonth(),n.getDate());const diff=Math.ceil((ty-TODAY)/864e5);h+=`<div class="aniv-row"><div class="aniv-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div style="flex:1"><div class="aniv-name">${a.nome}</div><div class="aniv-date">${p2(n.getDate())}/${p2(n.getMonth()+1)}</div></div><span class="aniv-badge ${diff<=1?"hoje":"prox"}">${diff===0?"Hoje!":diff===1?"Amanhã!":diff+" dias"}</span></div>`;});}
   document.getElementById("dash-content").innerHTML=h;
 }
-function goScreen(name,btn){document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));document.querySelectorAll(".nb").forEach(b=>b.classList.remove("active"));document.getElementById("s-"+name).classList.add("active");btn.classList.add("active");if(name==="home")renderHome();else if(name==="reg")renderCal();else if(name==="alunos")renderAl();else if(name==="fin")renderFin();else if(name==="dash")renderDash();}
+function goScreen(name,btn){document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));document.querySelectorAll(".nb").forEach(b=>b.classList.remove("active"));document.getElementById("s-"+name).classList.add("active");btn.classList.add("active");if(name==="home")renderHome();else if(name==="reg")renderCal();else if(name==="alunos")renderAl();else if(name==="fin")renderFin();else if(name==="grade")renderGrade();else if(name==="desp")renderDesp();else if(name==="dash")renderDash();}
 loadAll();
 </script>
 </body>
