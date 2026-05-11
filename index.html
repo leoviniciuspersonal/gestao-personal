@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#0A0A0A">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="LÃ©o Personal">
-<title>LÃ©o Personal</title>
+<meta name="apple-mobile-web-app-title" content="Léo Personal">
+<title>Léo Personal</title>
 <link rel="manifest" href="manifest.json">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -98,7 +98,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 .cb.filled{background:var(--border2)}.cb.cur{background:var(--g1)}
 .cb-label{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:7px;color:var(--faint);font-family:var(--mono);white-space:nowrap}
 .chart-axis{height:16px}
-/* CalendÃ¡rio */
+/* Calendário */
 .cal-wrap{padding:14px}
 .cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .cal-title{font-size:17px;font-weight:700;letter-spacing:-.3px}
@@ -191,7 +191,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 .save-btn{width:100%;padding:13px;background:var(--g1);color:#000;border:none;border-radius:var(--r-sm);font-size:13px;font-weight:700;cursor:pointer;margin-top:16px}
 .save-btn:hover{background:var(--g5)}
 .del-btn{width:100%;padding:12px;background:none;color:var(--red);border:.5px solid var(--red-lt);border-radius:var(--r-sm);font-size:13px;cursor:pointer;margin-top:8px}
-/* GrÃ¡fico evoluÃ§Ã£o */
+/* Gráfico evolução */
 .evo-card{background:var(--bg3);border-radius:var(--r-sm);padding:14px;margin-bottom:10px;border:.5px solid var(--border)}
 .evo-title{font-size:11px;font-weight:600;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:.05em}
 .evo-labels{display:flex;justify-content:space-between;margin-top:4px}
@@ -284,7 +284,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 .status-badge.pausado{background:var(--amber-lt);color:var(--amber)}
 .status-badge.ferias{background:var(--pr-lt);color:var(--pr-dk)}
 .status-badge.cancelado{background:var(--red-lt);color:var(--red)}
-/* AniversÃ¡rios do mÃªs */
+/* Aniversários do mês */
 .aniv-mes-card{background:var(--card);border-radius:var(--r);padding:14px;margin-bottom:14px;border:.5px solid var(--border)}
 .aniv-mes-title{font-size:11px;font-weight:700;color:var(--amber);margin-bottom:10px;letter-spacing:.06em;text-transform:uppercase}
 .aniv-mes-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:.5px solid var(--border)}
@@ -311,7 +311,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 .lucro-card.positivo .lucro-val{color:var(--g1)}
 .lucro-card.negativo .lucro-val{color:var(--red)}
 .lucro-lbl{font-size:11px;color:var(--muted)}
-/* HistÃ³rico presenÃ§a */
+/* Histórico presença */
 .pres-bar-wrap{display:flex;align-items:flex-end;gap:4px;height:60px;margin-bottom:6px}
 .pres-bar{flex:1;background:var(--bg3);border-radius:3px 3px 0 0;position:relative;min-height:3px;transition:height .4s}
 .pres-bar.cur{background:var(--g1)}.pres-bar.old{background:var(--border2)}
@@ -349,7 +349,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 .ga-slot-tag{font-size:10px;font-family:var(--mono);padding:3px 8px;border-radius:var(--r-xs);font-weight:600}
 .ga-slot-tag.fs{background:var(--fs-lt);color:var(--fs-dk)}.ga-slot-tag.ic{background:var(--ic-lt);color:var(--ic-dk)}
 .ga-slot-tag.pr{background:var(--pr-lt);color:var(--pr-dk)}.ga-slot-tag.cd{background:var(--cd-lt);color:var(--cd-dk)}
-/* Blocos no calendÃ¡rio */
+/* Blocos no calendário */
 .cal-bloco{display:flex;flex-direction:column;align-items:flex-start;padding:6px 10px;border-radius:var(--r-sm);margin-bottom:4px;border-left:3px solid;position:relative;cursor:pointer;transition:opacity .1s}
 .cal-bloco:hover{opacity:.85}
 .cal-bloco.fs{background:var(--fs-lt);border-color:var(--fs-dk)}.cal-bloco.ic{background:var(--ic-lt);border-color:var(--ic-dk)}
@@ -361,7 +361,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 .bloco-del:hover{color:var(--red)}
 .dd-add-btn{width:100%;padding:8px;border:.5px dashed var(--border2);border-radius:var(--r-sm);background:none;color:var(--muted);cursor:pointer;font-size:12px;margin-top:6px;transition:all .1s}
 .dd-add-btn:hover{border-color:var(--g1);color:var(--g1);background:var(--g4)}
-/* Modal ediÃ§Ã£o de aula */
+/* Modal edição de aula */
 .edit-modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:400;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
 .edit-modal-bg.open{display:flex}
 .edit-modal{background:var(--bg2);border-radius:var(--r);padding:20px;width:100%;max-width:360px;border:.5px solid var(--border);animation:fadeIn .2s}
@@ -391,14 +391,14 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
 </head>
 <body>
 <div class="splash" id="splash">
-  <div class="splash-logo">LÃ©o<span>Personal</span></div>
-  <div class="splash-sub">GestÃ£o Â· 2026</div>
+  <div class="splash-logo">Léo<span>Personal</span></div>
+  <div class="splash-sub">Gestão · 2026</div>
   <div class="splash-ring"></div>
 </div>
 <div class="app">
   <div class="hdr">
     <div class="hdr-top">
-      <div><div class="hdr-logo">LÃ©o<span>Personal</span></div><div class="hdr-sub" id="hdr-sub">GestÃ£o Â· 2026</div></div>
+      <div><div class="hdr-logo">Léo<span>Personal</span></div><div class="hdr-sub" id="hdr-sub">Gestão · 2026</div></div>
       <div><div class="hdr-date" id="hdr-date"></div><div class="hdr-count" id="hdr-count"></div></div>
     </div>
     <div class="hdr-kpis" id="hdr-kpis"></div>
@@ -407,7 +407,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
   <div class="screens">
     <div class="screen active" id="s-home"><div class="home-pad" id="home-content"></div></div>
     <div class="screen" id="s-reg"><div class="cal-wrap" id="cal-content"></div></div>
-    <div class="screen" id="s-alunos"><div class="al-pad"><input class="al-search" id="al-search" placeholder="ð  Buscar aluno..." oninput="filterAl(this.value)"><div id="al-content"></div></div></div>
+    <div class="screen" id="s-alunos"><div class="al-pad"><input class="al-search" id="al-search" placeholder="🔍  Buscar aluno..." oninput="filterAl(this.value)"><div id="al-content"></div></div></div>
     <div class="screen" id="s-fin"><div class="fin-pad" id="fin-content"></div></div>
     
 
@@ -416,7 +416,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
     <div class="screen" id="s-dash"><div class="dash-pad" id="dash-content"></div></div>
   </div>
   <div class="bnav">
-    <button class="nb active" onclick="goScreen('home',this)"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>InÃ­cio</button>
+    <button class="nb active" onclick="goScreen('home',this)"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Início</button>
     <button class="nb" onclick="goScreen('reg',this)"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>Registro</button>
     <button class="nb" onclick="goScreen('alunos',this)"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>Alunos</button>
     <button class="nb" onclick="goScreen('fin',this)"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Financeiro</button>
@@ -426,11 +426,11 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
   </div>
 </div>
 <div class="modal-bg" id="modal-bg" onclick="bgClick(event)">
-  <div class="modal"><div class="mh"></div><div class="m-title" id="m-title">Quem treinou?</div><div class="m-sub" id="m-sub"></div><input class="m-search" id="m-search" placeholder="Buscar aluno..." oninput="filterM()"><div class="m-list" id="m-list"></div><div class="m-clear" onclick="clearSlot()">â Limpar slot</div></div>
+  <div class="modal"><div class="mh"></div><div class="m-title" id="m-title">Quem treinou?</div><div class="m-sub" id="m-sub"></div><input class="m-search" id="m-search" placeholder="Buscar aluno..." oninput="filterM()"><div class="m-list" id="m-list"></div><div class="m-clear" onclick="clearSlot()">✕ Limpar slot</div></div>
 </div>
 <div class="ficha-modal" id="ficha-modal">
   <div class="ficha-inner">
-    <div class="ficha-hdr"><div class="ficha-av" id="f-av"></div><div style="flex:1"><div class="ficha-hdr-title" id="f-title">Ficha</div><div class="ficha-hdr-sub" id="f-sub"></div></div><button class="ficha-close" onclick="closeF()">Ã</button></div>
+    <div class="ficha-hdr"><div class="ficha-av" id="f-av"></div><div style="flex:1"><div class="ficha-hdr-title" id="f-title">Ficha</div><div class="ficha-hdr-sub" id="f-sub"></div></div><button class="ficha-close" onclick="closeF()">×</button></div>
     <div class="ficha-tabs" id="ficha-tabs"></div>
     <div class="ficha-body" id="ficha-body"></div>
   </div>
@@ -445,11 +445,11 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
       <select class="edit-sel" id="em-aluno"></select>
     </div>
     <div class="edit-row">
-      <div class="edit-lbl">HorÃ¡rio</div>
+      <div class="edit-lbl">Horário</div>
       <select class="edit-sel" id="em-hora"></select>
     </div>
     <div class="edit-row">
-      <div class="edit-lbl">DuraÃ§Ã£o</div>
+      <div class="edit-lbl">Duração</div>
       <select class="edit-sel" id="em-dur">
         <option value="30">30 minutos</option>
         <option value="45">45 minutos</option>
@@ -459,13 +459,13 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:1
         <option value="120">2 horas</option>
       </select>
     </div>
-    <div class="edit-lbl" style="margin-bottom:8px">Aplicar alteraÃ§Ã£o</div>
+    <div class="edit-lbl" style="margin-bottom:8px">Aplicar alteração</div>
     <div class="edit-scope">
       <div class="edit-scope-opt scope-opt sel" id="scope-day" onclick="selScope('day')">
         <div class="scope-opt-radio"></div>
         <div class="scope-opt-text">
-          <div class="scope-opt-title">SÃ³ este dia</div>
-          <div class="scope-opt-sub">Os outros dias ficam como estÃ£o</div>
+          <div class="scope-opt-title">Só este dia</div>
+          <div class="scope-opt-sub">Os outros dias ficam como estão</div>
         </div>
       </div>
       <div class="edit-scope-opt scope-opt" id="scope-fwd" onclick="selScope('fwd')">
@@ -491,11 +491,11 @@ const SB_PUB='sb_publishable_zlAwiS9k3wTdqKeI9owkkg_aIheD6iH';
 const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlibWhhaGt2eXRvZGJpanNtanVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NzIwOTYsImV4cCI6MjA5MjA0ODA5Nn0.87ZCts7qHzDGy1MPlxxrT8-bNwfgWZBnfyhtq7uzS34';
 const{createClient}=supabase;const db=createClient(SB_URL,SB_KEY,{global:{headers:{'X-Client-Info':'gestao-personal'}}});
 const HORARIOS=["6:30","7:30","8:30","9:30","10:30","11:30","12:30","14:00","15:00","16:00","17:00","18:00","19:00"];
-const MPT=["Janeiro","Fevereiro","MarÃ§o","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+const MPT=["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
 const MSH=["JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"];
-const DCAL=["DOM","SEG","TER","QUA","QUI","SEX","SÃB"];
+const DCAL=["DOM","SEG","TER","QUA","QUI","SEX","SÁB"];
 const LOCS=["FS","IC","PR","CD"];
-const LNOME={FS:"F. Scherer",IC:"Incorpore",PR:"Pratique",CD:"CondomÃ­nio"};
+const LNOME={FS:"F. Scherer",IC:"Incorpore",PR:"Pratique",CD:"Condomínio"};
 const ANO=2026,TODAY=new Date();
 let alunos=[],regCache={},pagCache={};
 let curMes=TODAY.getMonth(),modal={dk:"",si:0},fId=null,fTab="dados",selDay=null;
@@ -506,12 +506,12 @@ const lc=(nC)=>{const a=gAN(nC);return a?a.local.toLowerCase():""};
 const ini=(n)=>n.substring(0,2).toUpperCase();
 const p2=(n)=>String(n).padStart(2,"0");
 const uid=()=>"AL"+Date.now();
-const fR=(v,sh=false)=>{if(v==null||v==="")return"â";const n=Number(v);return sh&&n>=1000?`R$${(n/1000).toFixed(1)}k`:`R$\u00a0${n.toLocaleString("pt-BR")}`;};
+const fR=(v,sh=false)=>{if(v==null||v==="")return"–";const n=Number(v);return sh&&n>=1000?`R$${(n/1000).toFixed(1)}k`:`R$\u00a0${n.toLocaleString("pt-BR")}`;};
 const avS=(l)=>({FS:"background:var(--fs-lt);color:var(--fs-dk)",IC:"background:var(--ic-lt);color:var(--ic-dk)",PR:"background:var(--pr-lt);color:var(--pr-dk)",CD:"background:var(--cd-lt);color:var(--cd-dk)"}[l]||"background:var(--bg3);color:var(--muted)");
 function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2000);}
 function showSync(){const s=document.getElementById("sync-dot");s.classList.add("show");setTimeout(()=>s.classList.remove("show"),1200);}
 
-// ââ Despesas âââââââââââââââââââââââââââââââââââââââââââââââââ
+// ── Despesas ─────────────────────────────────────────────────
 const sv=(k,v)=>{try{localStorage.setItem("lp_"+k,JSON.stringify(v))}catch(e){}};
 const ld=(k,d)=>{try{const v=localStorage.getItem("lp_"+k);return v?JSON.parse(v):d}catch(e){return d}};
 let despesas=ld("despesas",[]);
@@ -525,31 +525,31 @@ function renderDesp(){
   const ft=fTot(mo);
   const lucro=ft.rec-total;
   const lClass=lucro>=0?"positivo":"negativo";
-  let h=`<div class="sec-t">Despesas â ${MPT[mo]} ${ANO}</div>
+  let h=`<div class="sec-t">Despesas — ${MPT[mo]} ${ANO}</div>
     <div class="lucro-card ${lClass}">
-      <div><div class="lucro-lbl">Lucro lÃ­quido</div><div class="lucro-val">${fR(lucro)}</div></div>
+      <div><div class="lucro-lbl">Lucro líquido</div><div class="lucro-val">${fR(lucro)}</div></div>
       <div style="text-align:right;font-size:11px;color:var(--muted)">
         <div>Receita: ${fR(ft.rec,true)}</div>
         <div>Despesas: ${fR(total,true)}</div>
       </div>
     </div>
-    <div class="sec-t">LanÃ§amentos</div>`;
-  if(!lista.length)h+=`<div style="text-align:center;color:var(--faint);font-size:12px;padding:20px 0;font-style:italic">Nenhuma despesa lanÃ§ada</div>`;
+    <div class="sec-t">Lançamentos</div>`;
+  if(!lista.length)h+=`<div style="text-align:center;color:var(--faint);font-size:12px;padding:20px 0;font-style:italic">Nenhuma despesa lançada</div>`;
   lista.forEach((d,i)=>{
     const idx=despesas.indexOf(d);
     h+=`<div class="desp-card">
       <div style="flex:1"><div class="desp-nome">${d.nome}</div><div class="desp-cat">${d.cat}</div></div>
       <span class="desp-val">- ${fR(d.valor)}</span>
-      <button class="desp-del" onclick="delDesp(${idx})">Ã</button>
+      <button class="desp-del" onclick="delDesp(${idx})">×</button>
     </div>`;
   });
   h+=`<div class="desp-form">
     <div class="desp-form-title">+ Nova despesa</div>
     <div class="fg">
-      <div class="ff full"><div class="fl">DescriÃ§Ã£o</div><input class="fi" id="dn" placeholder="Ex: Mensalidade academia"></div>
+      <div class="ff full"><div class="fl">Descrição</div><input class="fi" id="dn" placeholder="Ex: Mensalidade academia"></div>
       <div class="ff"><div class="fl">Categoria</div>
         <select class="fs-el" id="dc">
-          <option>Academia</option><option>Material</option><option>CombustÃ­vel</option>
+          <option>Academia</option><option>Material</option><option>Combustível</option>
           <option>Marketing</option><option>Equipamento</option><option>Outro</option>
         </select></div>
       <div class="ff"><div class="fl">Valor (R$)</div><input class="fi" id="dv" type="number" placeholder="0"></div>
@@ -563,16 +563,16 @@ function addDesp(){
   const nome=document.getElementById("dn")?.value.trim();
   const cat=document.getElementById("dc")?.value;
   const valor=parseFloat(document.getElementById("dv")?.value)||0;
-  if(!nome||!valor){toast("Preencha descriÃ§Ã£o e valor");return;}
+  if(!nome||!valor){toast("Preencha descrição e valor");return;}
   despesas.push({nome,cat,valor,mes:curMes,ano:ANO,ts:Date.now()});
-  sv("despesas",despesas);renderDesp();toast("â Despesa adicionada");
+  sv("despesas",despesas);renderDesp();toast("✓ Despesa adicionada");
 }
 
 function delDesp(i){
   despesas.splice(i,1);sv("despesas",despesas);renderDesp();
 }
 
-// ââ AniversÃ¡rios do mÃªs ââââââââââââââââââââââââââââââââââââââ
+// ── Aniversários do mês ──────────────────────────────────────
 function anivDoMes(mo){
   return alunos.filter(a=>{
     if(!a.nasc)return false;
@@ -584,20 +584,20 @@ function anivDoMes(mo){
 }
 
 function abrirWppAniv(nome,tel){
-  const msg=encodeURIComponent(`ð Feliz aniversÃ¡rio, ${nome}! Que esse novo ciclo seja cheio de saÃºde, evoluÃ§Ã£o e conquistas. Muito obrigado por confiar no meu trabalho. Conte comigo sempre! ðª`);
+  const msg=encodeURIComponent(`🎂 Feliz aniversário, ${nome}! Que esse novo ciclo seja cheio de saúde, evolução e conquistas. Muito obrigado por confiar no meu trabalho. Conte comigo sempre! 💪`);
   const num=tel?tel.replace(/\D/g,""):"";
   const url=num?`https://wa.me/55${num}?text=${msg}`:`https://wa.me/?text=${msg}`;
   window.open(url,"_blank");
 }
 
 function abrirWppCobranca(nome,tel,valor,mes){
-  const msg=encodeURIComponent(`OlÃ¡, ${nome}! Tudo bem? Passando para avisar que o pagamento de ${mes} (${fR(valor)}) ainda estÃ¡ em aberto. Qualquer dÃºvida Ã© sÃ³ falar! ð`);
+  const msg=encodeURIComponent(`Olá, ${nome}! Tudo bem? Passando para avisar que o pagamento de ${mes} (${fR(valor)}) ainda está em aberto. Qualquer dúvida é só falar! 😊`);
   const num=tel?tel.replace(/\D/g,""):"";
   const url=num?`https://wa.me/55${num}?text=${msg}`:`https://wa.me/?text=${msg}`;
   window.open(url,"_blank");
 }
 
-// ââ HistÃ³rico presenÃ§a âââââââââââââââââââââââââââââââââââââââ
+// ── Histórico presença ───────────────────────────────────────
 function presencaAluno(aId){
   const a=gA(aId);if(!a)return[];
   const meses=[];
@@ -628,24 +628,24 @@ function renderPresenca(aId){
   return`<div class="pres-bar-wrap">${bars}</div><div class="pres-axis"></div>
     <div class="pres-stats">
       <div class="pres-stat"><div class="pres-stat-v">${total}</div><div class="pres-stat-l">Total ${ANO}</div></div>
-      <div class="pres-stat"><div class="pres-stat-v">${media}</div><div class="pres-stat-l">MÃ©dia/mÃªs</div></div>
+      <div class="pres-stat"><div class="pres-stat-v">${media}</div><div class="pres-stat-l">Média/mês</div></div>
       <div class="pres-stat"><div class="pres-stat-v">${melhor.cnt}</div><div class="pres-stat-l">${MSH[melhor.m]} (melhor)</div></div>
     </div>`;
 }
 
 
-// ââ HorÃ¡rios 30/30 âââââââââââââââââââââââââââââââââââââââââââ
+// ── Horários 30/30 ───────────────────────────────────────────
 const H30=[];
 for(let h=6;h<=22;h++){H30.push(h+":00");if(h<22)H30.push(h+":30");}
 
-// ââ Grade fixa âââââââââââââââââââââââââââââââââââââââââââââââ
+// ── Grade fixa ───────────────────────────────────────────────
 // grade[alunoId] = [ {dia:0-6, hora:"7:30", dur:60, desde:"2026-01-01"} ]
 // dia: 0=Dom,1=Seg,2=Ter,3=Qua,4=Qui,5=Sex,6=Sab
 // overrides[alunoId_YYYY_M_D] = {hora, dur} | "removed"
 let grade=ld("grade2",{});
 let overrides=ld("overrides2",{});
 
-const DIAS_GRADE=["Dom","Seg","Ter","Qua","Qui","Sex","SÃ¡b"];
+const DIAS_GRADE=["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
 
 function saveGrade(){sv("grade2",grade);}
 function saveOvr(){sv("overrides2",overrides);}
@@ -660,7 +660,7 @@ function aulasEfetivas(ano,mes,dia){
   alunos.forEach(a=>{
     const slots=grade[a.id]||[];
     slots.forEach((slot,si)=>{
-      // Verificar se slot estÃ¡ ativo nesta data
+      // Verificar se slot está ativo nesta data
       const desdeDate=slot.desde?new Date(slot.desde):new Date(ano,0,1);
       const ateDate=slot.ate?new Date(slot.ate):new Date(2099,0,1);
       if(date<desdeDate||date>ateDate)return;
@@ -682,7 +682,7 @@ function aulasEfetivas(ano,mes,dia){
     });
   });
 
-  // Registros manuais no regCache (aulas nÃ£o da grade)
+  // Registros manuais no regCache (aulas não da grade)
   const regSlots=regCache[dk(ano,mes,dia)]||{};
   Object.entries(regSlots).forEach(([si,nomeC])=>{
     if(!nomeC)return;
@@ -708,11 +708,11 @@ function aulasEfetivas(ano,mes,dia){
   });
 }
 
-// ââ Render Grade (configuraÃ§Ã£o) ââââââââââââââââââââââââââââââ
+// ── Render Grade (configuração) ──────────────────────────────
 function renderGrade(){
   const dias=DIAS_GRADE;
   let h=`<div class="gsec">Grade de aulas por aluno</div>
-  <div style="font-size:12px;color:var(--muted);margin-bottom:14px">Defina os dias e horÃ¡rios fixos de cada aluno. O calendÃ¡rio preencherÃ¡ automaticamente.</div>`;
+  <div style="font-size:12px;color:var(--muted);margin-bottom:14px">Defina os dias e horários fixos de cada aluno. O calendário preencherá automaticamente.</div>`;
 
   alunos.filter(a=>!a.status||a.status==="ativo").forEach(a=>{
     const slots=grade[a.id]||[];
@@ -734,13 +734,13 @@ function renderGrade(){
       </div>
       <div class="ga-selects">
         <div class="ga-select-wrap">
-          <div class="ga-select-lbl">HorÃ¡rio</div>
+          <div class="ga-select-lbl">Horário</div>
           <select class="ga-sel" id="gh-${a.id}">
             ${H30.map(h=>`<option value="${h}">${h}</option>`).join("")}
           </select>
         </div>
         <div class="ga-select-wrap">
-          <div class="ga-select-lbl">DuraÃ§Ã£o</div>
+          <div class="ga-select-lbl">Duração</div>
           <select class="ga-sel" id="gd-${a.id}">
             <option value="30">30min</option>
             <option value="45">45min</option>
@@ -784,7 +784,7 @@ function addSlotGrade(aid){
   // Reset visual
   document.querySelectorAll(`[data-aid="${aid}"]`).forEach(b=>b.classList.remove("sel"));
   renderGrade();
-  toast("â Grade salva");
+  toast("✓ Grade salva");
 }
 
 function removerSlotGrade(aid,idx){
@@ -793,7 +793,7 @@ function removerSlotGrade(aid,idx){
   saveGrade();renderGrade();toast("Slot removido");
 }
 
-// ââ CalendÃ¡rio com grade ââââââââââââââââââââââââââââââââââââââ
+// ── Calendário com grade ──────────────────────────────────────
 let _editCtx=null;
 let _editScope="day";
 
@@ -813,7 +813,7 @@ function openEditModal(ctx){
 
   // Populate aluno select
   const alSel=document.getElementById("em-aluno");
-  alSel.innerHTML=alunos.map(a=>`<option value="${a.id}" ${a.id===alunoId?"selected":""}>${a.nome_c} â ${a.nome.split(" ")[0]}</option>`).join("");
+  alSel.innerHTML=alunos.map(a=>`<option value="${a.id}" ${a.id===alunoId?"selected":""}>${a.nome_c} — ${a.nome.split(" ")[0]}</option>`).join("");
 
   // Populate hora select
   const hSel=document.getElementById("em-hora");
@@ -847,7 +847,7 @@ async function confirmEdit(){
   const{alunoId,slotIdx,dateStr,ano,mes,dia}=_editCtx;
 
   if(_editScope==="day"||slotIdx===-1){
-    // Override sÃ³ neste dia
+    // Override só neste dia
     if(slotIdx>=0){
       const ovrKey=`${alunoId}_${dateStr}_${slotIdx}`;
       overrides[ovrKey]={hora:novaHora,dur:novaDur};
@@ -856,7 +856,7 @@ async function confirmEdit(){
       // Manual: update regCache
       // find old slot index
       const slots=regCache[dateStr]||{};
-      // just add to regCache with new time approach â simplified
+      // just add to regCache with new time approach — simplified
     }
   } else {
     // Alterar grade a partir desta data
@@ -878,7 +878,7 @@ async function confirmEdit(){
   }
   closeEditModal();
   renderCal();
-  toast("â Aula atualizada");
+  toast("✓ Aula atualizada");
 }
 
 async function deleteAula(ctx){
@@ -901,14 +901,14 @@ async function deleteAula(ctx){
   toast("Aula removida");
 }
 
-// Adicionar aula manual num dia (botÃ£o +)
+// Adicionar aula manual num dia (botão +)
 let _addCtx=null;
 function openAddAula(dateStr){
   _addCtx=dateStr;
   const pts=dateStr.split("_");
   modal.dk=dateStr;modal.si=-1;
   document.getElementById("m-title").textContent="Adicionar aula";
-  document.getElementById("m-sub").textContent=`${p2(pts[2])}/${p2(parseInt(pts[1])+1)} â escolha o horÃ¡rio`;
+  document.getElementById("m-sub").textContent=`${p2(pts[2])}/${p2(parseInt(pts[1])+1)} — escolha o horário`;
   document.getElementById("m-search").value="";
   renderML("");
   document.getElementById("modal-bg").classList.add("open");
@@ -937,9 +937,9 @@ function mTot(mo){const t={FS:0,IC:0,PR:0,CD:0,total:0};const num=new Date(ANO,m
 function fTot(mo){let rec=0,pend=0,atras=0;alunos.forEach(a=>{const p=pagCache[`${a.id}_${ANO}_${mo}`];const v=p&&p.valor!=null?Number(p.valor):Number(a.valor_ref)||0;const s=p?p.status:"pendente";if(s==="pago")rec+=v;else if(s==="atrasado")atras+=v;else pend+=v;});return{rec,pend,atras};}
 function anRec(){const r={};alunos.forEach(a=>{let s=0;for(let m=0;m<12;m++){const p=pagCache[`${a.id}_${ANO}_${m}`];if(p&&p.status==="pago")s+=Number(p.valor||a.valor_ref)||0;}r[a.id]=s;});return r;}
 function buildHdr(){
-  const dias=["Dom","Seg","Ter","Qua","Qui","Sex","SÃ¡b"];
+  const dias=["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
   document.getElementById("hdr-date").textContent=`${dias[TODAY.getDay()]}, ${TODAY.getDate()} ${MPT[TODAY.getMonth()].substring(0,3).toLowerCase()}`;
-  document.getElementById("hdr-sub").textContent=`${MPT[curMes]} Â· ${ANO}`;
+  document.getElementById("hdr-sub").textContent=`${MPT[curMes]} · ${ANO}`;
   document.getElementById("hdr-count").textContent=`${alunos.length} alunos ativos`;
   const t=mTot(curMes),ft=fTot(curMes);
   document.getElementById("hdr-kpis").innerHTML=["FS","IC","PR","CD"].map(s=>`<div class="hkpi ${s.toLowerCase()}"><div class="hkpi-v">${t[s]}</div><div class="hkpi-l">${s}</div></div>`).join("")+`<div class="hkpi rec"><div class="hkpi-v" style="font-size:12px">${fR(ft.rec,true)}</div><div class="hkpi-l">Receita</div></div>`;
@@ -949,15 +949,15 @@ function setMes(i){curMes=i;selDay=null;buildHdr();const sc=document.querySelect
 function renderHome(){
   const ft=fTot(curMes),t=mTot(curMes);let alerts="";
   const atr=alunos.filter(a=>{const p=pagCache[`${a.id}_${ANO}_${curMes}`];return p&&p.status==="atrasado";});
-  if(atr.length)alerts+=`<div class="alert-card danger"><div class="alert-icon">â ï¸</div><div><div class="alert-text">${atr.length} pagamento${atr.length>1?"s":""} em atraso</div><div class="alert-sub">${atr.map(a=>a.nome.split(" ")[0]).join(", ")}</div></div></div>`;
+  if(atr.length)alerts+=`<div class="alert-card danger"><div class="alert-icon">⚠️</div><div><div class="alert-text">${atr.length} pagamento${atr.length>1?"s":""} em atraso</div><div class="alert-sub">${atr.map(a=>a.nome.split(" ")[0]).join(", ")}</div></div></div>`;
   const anivP=alunos.filter(a=>{if(!a.nasc)return false;const n=new Date(a.nasc);const ty=new Date(ANO,n.getMonth(),n.getDate());return Math.ceil((ty-TODAY)/864e5)>=0&&Math.ceil((ty-TODAY)/864e5)<=7;});
-  if(anivP.length)alerts+=`<div class="alert-card info"><div class="alert-icon">ð</div><div><div class="alert-text">AniversÃ¡rio em breve</div><div class="alert-sub">${anivP.map(a=>{const n=new Date(a.nasc);return`${a.nome.split(" ")[0]} (${p2(n.getDate())}/${p2(n.getMonth()+1)})`;}).join(", ")}</div></div></div>`;
+  if(anivP.length)alerts+=`<div class="alert-card info"><div class="alert-icon">🎂</div><div><div class="alert-text">Aniversário em breve</div><div class="alert-sub">${anivP.map(a=>{const n=new Date(a.nasc);return`${a.nome.split(" ")[0]} (${p2(n.getDate())}/${p2(n.getMonth()+1)})`;}).join(", ")}</div></div></div>`;
   const tdK=dk(ANO,TODAY.getMonth(),TODAY.getDate());const tdS=regCache[tdK]||{};
   const tdA=HORARIOS.map((h,i)=>({h,nC:tdS[i]||""})).filter(s=>s.nC);
   const cbars=MSH.map((m,mi)=>({m,rec:fTot(mi).rec,mi}));
   const maxR=Math.max(...cbars.map(b=>b.rec),1);
   
-  // AniversÃ¡rios do mÃªs
+  // Aniversários do mês
   const anivMes=anivDoMes(curMes);
   let anivMesHTML="";
   if(anivMes.length){
@@ -968,21 +968,21 @@ function renderHome(){
       return`<div class="aniv-mes-row">
         <div class="aniv-mes-av" style="${avS(a.local)}">${ini(a.nome_c)}</div>
         <div class="aniv-mes-info">
-          <div class="aniv-mes-nome">${a.nome.split(" ")[0]} ${isHoje?"ð":""}</div>
-          <div class="aniv-mes-data">dia ${dia} Â· ${a.prof||a.local}</div>
+          <div class="aniv-mes-nome">${a.nome.split(" ")[0]} ${isHoje?"🎂":""}</div>
+          <div class="aniv-mes-data">dia ${dia} · ${a.prof||a.local}</div>
         </div>
         <button class="aniv-mes-btn" onclick="abrirWppAniv('${a.nome.split(" ")[0]}','${a.tel||""}')">WhatsApp</button>
       </div>`;
     }).join("");
-    anivMesHTML=`<div class="aniv-mes-card"><div class="aniv-mes-title">ð AniversÃ¡rios de ${MPT[curMes]}</div>${rows}</div>`;
+    anivMesHTML=`<div class="aniv-mes-card"><div class="aniv-mes-title">🎂 Aniversários de ${MPT[curMes]}</div>${rows}</div>`;
   }
 
   document.getElementById("home-content").innerHTML=`
-    <div class="greeting">OlÃ¡, <span>LÃ©o</span> ð</div>
-    <div class="greeting-sub">${MPT[curMes]} ${ANO} Â· ${t.total} aulas registradas</div>
+    <div class="greeting">Olá, <span>Léo</span> 👋</div>
+    <div class="greeting-sub">${MPT[curMes]} ${ANO} · ${t.total} aulas registradas</div>
     ${alerts}
     <div class="today-card">
-      <div class="today-title">ð Hoje, ${TODAY.getDate()}/${p2(TODAY.getMonth()+1)}</div>
+      <div class="today-title">📅 Hoje, ${TODAY.getDate()}/${p2(TODAY.getMonth()+1)}</div>
       ${tdA.length?tdA.map(s=>{const a=gAN(s.nC);const cl=a?a.local.toLowerCase():"";return`<div class="today-slot"><span class="ts-time">${s.h}</span><span class="ts-name">${s.nC}</span><span class="ts-loc ${cl}">${a?a.local:""}</span></div>`;}).join(""):`<div class="today-empty">Nenhuma aula registrada hoje</div>`}
     </div>
     <div class="fin-mini">
@@ -1013,15 +1013,15 @@ function renderCal(){
       return`<div class="cal-bloco ${cl}" onclick="openEditModal({alunoId:'${au.alunoId}',nomeC:'${au.nomeC}',hora:'${au.hora}',dur:${au.dur},slotIdx:${au.slotIdx},dateStr:'${au.dateStr}',ano:${ANO},mes:${curMes},dia:${selDay}})">
         <div class="bloco-hora">${au.hora}</div>
         <div class="bloco-nome">${au.nomeC}</div>
-        <div class="bloco-dur">${au.dur}min Â· ${au.local}</div>
+        <div class="bloco-dur">${au.dur}min · ${au.local}</div>
       </div>`;
     }).join("");
 
     ddHTML=`<div class="day-detail">
       <div class="dd-title">
-        <span>${selDay}/${p2(curMes+1)} Â· <span style="color:var(--g1)">${tots.total} aula${tots.total!==1?"s":""}</span></span>
+        <span>${selDay}/${p2(curMes+1)} · <span style="color:var(--g1)">${tots.total} aula${tots.total!==1?"s":""}</span></span>
         <div class="dd-badges">${badges}</div>
-        <button class="dd-close" onclick="selDay=null;renderCal()">Ã</button>
+        <button class="dd-close" onclick="selDay=null;renderCal()">×</button>
       </div>
       ${blocos||`<div style="text-align:center;color:var(--faint);font-size:12px;padding:12px 0;font-style:italic">Nenhuma aula neste dia</div>`}
       <button class="dd-add-btn" onclick="openAddAula('${dateStr}')">+ Adicionar aula</button>
@@ -1055,17 +1055,17 @@ function renderCal(){
 }
 function prevMes(){if(curMes>0){curMes--;selDay=null;buildHdr();renderCal();}}
 function nextMes(){if(curMes<11){curMes++;selDay=null;buildHdr();renderCal();}}
-function openM(key,si){modal={dk:key,si};const pts=key.split("_");document.getElementById("m-title").textContent="Quem treinou?";document.getElementById("m-sub").textContent=`${p2(pts[2])}/${p2(parseInt(pts[1])+1)} â ${HORARIOS[si]}`;document.getElementById("m-search").value="";renderML("");document.getElementById("modal-bg").classList.add("open");}
+function openM(key,si){modal={dk:key,si};const pts=key.split("_");document.getElementById("m-title").textContent="Quem treinou?";document.getElementById("m-sub").textContent=`${p2(pts[2])}/${p2(parseInt(pts[1])+1)} — ${HORARIOS[si]}`;document.getElementById("m-search").value="";renderML("");document.getElementById("modal-bg").classList.add("open");}
 function bgClick(e){if(e.target===document.getElementById("modal-bg"))document.getElementById("modal-bg").classList.remove("open");}
 function filterM(){renderML(document.getElementById("m-search").value);}
 function renderML(f){const fl=f.toUpperCase();const list=alunos.filter(a=>!fl||a.nome_c.includes(fl)||a.nome.toUpperCase().includes(fl));let h=list.map(a=>`<div class="m-item" onclick="selA('${a.nome_c}')"><div class="m-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div><div class="m-name">${a.nome_c}</div><div class="m-sub-nm">${a.nome.split(" ").slice(0,2).join(" ")}</div></div><span class="m-loc ${a.local.toLowerCase()}">${a.local}</span></div>`).join("");if(!h)h=`<div style="padding:20px;text-align:center;color:var(--faint);font-size:12px">Nenhum aluno encontrado</div>`;document.getElementById("m-list").innerHTML=h;}
-async function selA(nC){const pts=modal.dk.split("_");const ano=parseInt(pts[0]),mes=parseInt(pts[1]),dia=parseInt(pts[2]);if(!regCache[modal.dk])regCache[modal.dk]={};regCache[modal.dk][modal.si]=nC;document.getElementById("modal-bg").classList.remove("open");renderCal();buildHdr();if(document.getElementById("s-home").classList.contains("active"))renderHome();toast(`${nC} â`);showSync();await db.from("gestao_registro").upsert({ano,mes,dia,slot:modal.si,nome_c:nC},{onConflict:"ano,mes,dia,slot"});}
+async function selA(nC){const pts=modal.dk.split("_");const ano=parseInt(pts[0]),mes=parseInt(pts[1]),dia=parseInt(pts[2]);if(!regCache[modal.dk])regCache[modal.dk]={};regCache[modal.dk][modal.si]=nC;document.getElementById("modal-bg").classList.remove("open");renderCal();buildHdr();if(document.getElementById("s-home").classList.contains("active"))renderHome();toast(`${nC} ✓`);showSync();await db.from("gestao_registro").upsert({ano,mes,dia,slot:modal.si,nome_c:nC},{onConflict:"ano,mes,dia,slot"});}
 async function clearSlot(){const pts=modal.dk.split("_");const ano=parseInt(pts[0]),mes=parseInt(pts[1]),dia=parseInt(pts[2]);if(regCache[modal.dk])delete regCache[modal.dk][modal.si];document.getElementById("modal-bg").classList.remove("open");renderCal();buildHdr();await db.from("gestao_registro").delete().eq("ano",ano).eq("mes",mes).eq("dia",dia).eq("slot",modal.si);}
 async function clrD(key,si,dia){const pts=key.split("_");const ano=parseInt(pts[0]),mes=parseInt(pts[1]);if(regCache[key])delete regCache[key][si];renderCal();buildHdr();await db.from("gestao_registro").delete().eq("ano",ano).eq("mes",mes).eq("dia",dia).eq("slot",si);}
-function renderAl(f=""){const fl=f.toUpperCase();const list=f?alunos.filter(a=>a.nome.toUpperCase().includes(fl)||a.nome_c.includes(fl)):alunos;document.getElementById("al-content").innerHTML=list.map(a=>`<div class="al-card" onclick="openF('${a.id}')"><div class="al-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div style="flex:1"><div class="al-name">${a.nome}</div><div style="display:flex;align-items:center;gap:6px;margin-top:3px"><span class="status-badge ${a.status||'ativo'}">${(a.status||'ativo').charAt(0).toUpperCase()+(a.status||'ativo').slice(1)}</span><span class="al-sub">${LNOME[a.local]} Â· ${fR(a.valor_ref)}/mÃªs Â· ${a.obj||""}</span></div></div><span class="al-loc ${a.local.toLowerCase()}">${a.local}</span></div>`).join("")+`<button class="add-fab" onclick="novA()">+</button>`;}
+function renderAl(f=""){const fl=f.toUpperCase();const list=f?alunos.filter(a=>a.nome.toUpperCase().includes(fl)||a.nome_c.includes(fl)):alunos;document.getElementById("al-content").innerHTML=list.map(a=>`<div class="al-card" onclick="openF('${a.id}')"><div class="al-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div style="flex:1"><div class="al-name">${a.nome}</div><div style="display:flex;align-items:center;gap:6px;margin-top:3px"><span class="status-badge ${a.status||'ativo'}">${(a.status||'ativo').charAt(0).toUpperCase()+(a.status||'ativo').slice(1)}</span><span class="al-sub">${LNOME[a.local]} · ${fR(a.valor_ref)}/mês · ${a.obj||""}</span></div></div><span class="al-loc ${a.local.toLowerCase()}">${a.local}</span></div>`).join("")+`<button class="add-fab" onclick="novA()">+</button>`;}
 function filterAl(v){renderAl(v);}
-const FTABS=[{k:"dados",l:"Dados"},{k:"saude",l:"SaÃºde"},{k:"medidas",l:"Medidas"},{k:"objetivo",l:"Objetivo"},{k:"presenca",l:"PresenÃ§a"}];
-function openF(id){fId=id;fTab="dados";const a=gA(id);document.getElementById("f-av").style.cssText=avS(a?a.local:"FS");document.getElementById("f-av").textContent=a?ini(a.nome_c):"";document.getElementById("f-title").textContent=a?a.nome:"Novo Aluno";document.getElementById("f-sub").textContent=a?`${LNOME[a.local]} Â· ${fR(a.valor_ref)}/mÃªs`:"";document.getElementById("ficha-tabs").innerHTML=FTABS.map((t,i)=>`<button class="ftab${i===0?" active":""}" onclick="swFT('${t.k}',this)">${t.l}</button>`).join("");renderFB();document.getElementById("ficha-modal").classList.add("open");}
+const FTABS=[{k:"dados",l:"Dados"},{k:"saude",l:"Saúde"},{k:"medidas",l:"Medidas"},{k:"objetivo",l:"Objetivo"},{k:"presenca",l:"Presença"}];
+function openF(id){fId=id;fTab="dados";const a=gA(id);document.getElementById("f-av").style.cssText=avS(a?a.local:"FS");document.getElementById("f-av").textContent=a?ini(a.nome_c):"";document.getElementById("f-title").textContent=a?a.nome:"Novo Aluno";document.getElementById("f-sub").textContent=a?`${LNOME[a.local]} · ${fR(a.valor_ref)}/mês`:"";document.getElementById("ficha-tabs").innerHTML=FTABS.map((t,i)=>`<button class="ftab${i===0?" active":""}" onclick="swFT('${t.k}',this)">${t.l}</button>`).join("");renderFB();document.getElementById("ficha-modal").classList.add("open");}
 async function novA(){const a={id:uid(),nome:"Novo Aluno",nome_c:"NOVO",local:"FS",valor_ref:0,tel:"",email:"",nasc:null,prof:"",obj:"",obj_s:"",saude:{},medidas:{},medidas_hist:[],ativo:true};const{error}=await db.from("gestao_alunos").insert(a);if(!error){alunos.push(a);openF(a.id);}else toast("Erro ao criar aluno");}
 function closeF(){document.getElementById("ficha-modal").classList.remove("open");}
 function swFT(tab,btn){fTab=tab;document.querySelectorAll(".ftab").forEach(t=>t.classList.remove("active"));btn.classList.add("active");renderFB();}
@@ -1091,71 +1091,71 @@ function buildEvoChart(hist,field,label){
 }
 function renderFB(){
   const a=gA(fId);if(!a)return;const b=document.getElementById("ficha-body");
-  if(fTab==="dados"){b.innerHTML=`<div class="fsec">IdentificaÃ§Ã£o</div><div class="fg"><div class="ff full"><div class="fl">Nome completo</div><input class="fi" id="fn" value="${a.nome||""}"></div><div class="ff"><div class="fl">Apelido no registro</div><input class="fi" id="fnC" value="${a.nome_c||""}" style="text-transform:uppercase"></div><div class="ff"><div class="fl">WhatsApp</div><input class="fi" id="ftel" value="${a.tel||""}" type="tel"></div><div class="ff"><div class="fl">E-mail</div><input class="fi" id="femail" value="${a.email||""}" type="email"></div><div class="ff"><div class="fl">Nascimento</div><input class="fi" id="fnasc" value="${a.nasc||""}" type="date"></div><div class="ff"><div class="fl">ProfissÃ£o</div><input class="fi" id="fprof" value="${a.prof||""}"></div></div><div class="fsec">Financeiro</div><div class="fg"><div class="ff"><div class="fl">Status</div>
+  if(fTab==="dados"){b.innerHTML=`<div class="fsec">Identificação</div><div class="fg"><div class="ff full"><div class="fl">Nome completo</div><input class="fi" id="fn" value="${a.nome||""}"></div><div class="ff"><div class="fl">Apelido no registro</div><input class="fi" id="fnC" value="${a.nome_c||""}" style="text-transform:uppercase"></div><div class="ff"><div class="fl">WhatsApp</div><input class="fi" id="ftel" value="${a.tel||""}" type="tel"></div><div class="ff"><div class="fl">E-mail</div><input class="fi" id="femail" value="${a.email||""}" type="email"></div><div class="ff"><div class="fl">Nascimento</div><input class="fi" id="fnasc" value="${a.nasc||""}" type="date"></div><div class="ff"><div class="fl">Profissão</div><input class="fi" id="fprof" value="${a.prof||""}"></div></div><div class="fsec">Financeiro</div><div class="fg"><div class="ff"><div class="fl">Status</div>
         <select class="fs-el" id="fstatus">
           <option value="ativo" ${(a.status||"ativo")==="ativo"?"selected":""}>Ativo</option>
           <option value="pausado" ${a.status==="pausado"?"selected":""}>Pausado</option>
-          <option value="ferias" ${a.status==="ferias"?"selected":""}>FÃ©rias</option>
+          <option value="ferias" ${a.status==="ferias"?"selected":""}>Férias</option>
           <option value="cancelado" ${a.status==="cancelado"?"selected":""}>Cancelado</option>
         </select></div>
-      <div class="ff"><div class="fl">Local</div><select class="fs-el" id="floc">${LOCS.map(l=>`<option value="${l}" ${a.local===l?"selected":""}>${l} â ${LNOME[l]}</option>`).join("")}</select></div><div class="ff"><div class="fl">Valor referÃªncia (R$)</div><input class="fi" id="fval" value="${a.valor_ref||""}" type="number"></div></div><button class="save-btn" onclick="savD()">Salvar dados</button><button class="del-btn" onclick="delA('${a.id}')">Remover aluno</button>`;}
-  else if(fTab==="saude"){const s=a.saude||{};b.innerHTML=`<div class="fsec">HistÃ³rico clÃ­nico</div><div class="fg"><div class="ff full"><div class="fl">DoenÃ§as / condiÃ§Ãµes</div><textarea class="fta" id="sd">${s.doencas||""}</textarea></div><div class="ff full"><div class="fl">Medicamentos</div><textarea class="fta" id="sme">${s.med||""}</textarea></div><div class="ff full"><div class="fl">LesÃµes / limitaÃ§Ãµes</div><textarea class="fta" id="sl">${s.lesoes||""}</textarea></div><div class="ff full"><div class="fl">Cirurgias</div><textarea class="fta" id="sc">${s.cirurgia||""}</textarea></div><div class="ff full"><div class="fl">ObservaÃ§Ãµes</div><textarea class="fta" id="so">${s.obs||""}</textarea></div></div><button class="save-btn" onclick="savS()">Salvar saÃºde</button>`;}
+      <div class="ff"><div class="fl">Local</div><select class="fs-el" id="floc">${LOCS.map(l=>`<option value="${l}" ${a.local===l?"selected":""}>${l} — ${LNOME[l]}</option>`).join("")}</select></div><div class="ff"><div class="fl">Valor referência (R$)</div><input class="fi" id="fval" value="${a.valor_ref||""}" type="number"></div></div><button class="save-btn" onclick="savD()">Salvar dados</button><button class="del-btn" onclick="delA('${a.id}')">Remover aluno</button>`;}
+  else if(fTab==="saude"){const s=a.saude||{};b.innerHTML=`<div class="fsec">Histórico clínico</div><div class="fg"><div class="ff full"><div class="fl">Doenças / condições</div><textarea class="fta" id="sd">${s.doencas||""}</textarea></div><div class="ff full"><div class="fl">Medicamentos</div><textarea class="fta" id="sme">${s.med||""}</textarea></div><div class="ff full"><div class="fl">Lesões / limitações</div><textarea class="fta" id="sl">${s.lesoes||""}</textarea></div><div class="ff full"><div class="fl">Cirurgias</div><textarea class="fta" id="sc">${s.cirurgia||""}</textarea></div><div class="ff full"><div class="fl">Observações</div><textarea class="fta" id="so">${s.obs||""}</textarea></div></div><button class="save-btn" onclick="savS()">Salvar saúde</button>`;}
   else if(fTab==="medidas"){
     const m=a.medidas||{},hist=a.medidas_hist||[];
     const imc=m.peso&&m.altura?(m.peso/((m.altura/100)**2)).toFixed(1):"";
-    const charts=hist.length>=2?buildEvoChart(hist,"peso","EvoluÃ§Ã£o Peso (kg)")+buildEvoChart(hist,"gord","EvoluÃ§Ã£o % Gordura"):"";
-    b.innerHTML=`<div class="fsec">Nova avaliaÃ§Ã£o</div><div class="fg"><div class="ff"><div class="fl">Peso (kg)</div><input class="fi" id="mp" value="${m.peso||""}" type="number" step="0.1" oninput="cIMC()"></div><div class="ff"><div class="fl">Altura (cm)</div><input class="fi" id="ma" value="${m.altura||""}" type="number" oninput="cIMC()"></div><div class="ff"><div class="fl">% Gordura</div><input class="fi" id="mg" value="${m.gord||""}" type="number" step="0.1"></div><div class="ff"><div class="fl">IMC</div><input class="fi" id="mi" value="${imc}" readonly style="opacity:.5"></div><div class="ff"><div class="fl">Cintura (cm)</div><input class="fi" id="mci" value="${m.cintura||""}" type="number" step="0.1"></div><div class="ff"><div class="fl">Quadril (cm)</div><input class="fi" id="mq" value="${m.quadril||""}" type="number" step="0.1"></div><div class="ff full"><div class="fl">Data</div><input class="fi" id="md" value="${m.data||new Date().toISOString().split("T")[0]}" type="date"></div></div><button class="save-btn" onclick="savM()">Salvar e adicionar ao histÃ³rico</button>${charts?`<div class="fsec">EvoluÃ§Ã£o</div>${charts}`:""}${hist.length?`<div class="fsec">HistÃ³rico</div>${hist.slice().reverse().map((h,i)=>`<div class="mh-entry"><div class="mh-date">${h.data||"â"}</div><div class="mh-chips">${h.peso?`<span class="mh-chip">âï¸ ${h.peso}kg</span>`:""} ${h.gord?`<span class="mh-chip">ð¥ ${h.gord}%</span>`:""} ${h.imc?`<span class="mh-chip">IMC ${h.imc}</span>`:""}</div><button class="mh-del" onclick="delMed(${hist.length-1-i})">Ã</button></div>`).join("")}`:""}`;}
-  else if(fTab==="objetivo"){b.innerHTML=`<div class="fsec">Objetivo e treino</div><div class="fg"><div class="ff"><div class="fl">Objetivo principal</div><select class="fs-el" id="oo">${["Emagrecimento","Ganho de massa","Condicionamento","SaÃºde / qualidade de vida","Hipertrofia","ReabilitaÃ§Ã£o","Performance","Prep. esporte","Outro"].map(v=>`<option value="${v}" ${a.obj===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff"><div class="fl">Objetivo secundÃ¡rio</div><input class="fi" id="os" value="${a.obj_s||""}"></div><div class="ff"><div class="fl">FrequÃªncia/semana</div><select class="fs-el" id="of">${["1x","2x","3x","4x","5x"].map(v=>`<option value="${v}" ${a.freq===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff"><div class="fl">NÃ­vel</div><select class="fs-el" id="on">${["SedentÃ¡rio","Iniciante","IntermediÃ¡rio","AvanÃ§ado"].map(v=>`<option value="${v}" ${a.nivel===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff full"><div class="fl">DescriÃ§Ã£o</div><textarea class="fta" id="od">${a.obj_d||""}</textarea></div><div class="ff full"><div class="fl">ObservaÃ§Ãµes do treino</div><textarea class="fta" id="ob">${a.obj_o||""}</textarea></div></div><button class="save-btn" onclick="savO()">Salvar objetivo</button>`;}
+    const charts=hist.length>=2?buildEvoChart(hist,"peso","Evolução Peso (kg)")+buildEvoChart(hist,"gord","Evolução % Gordura"):"";
+    b.innerHTML=`<div class="fsec">Nova avaliação</div><div class="fg"><div class="ff"><div class="fl">Peso (kg)</div><input class="fi" id="mp" value="${m.peso||""}" type="number" step="0.1" oninput="cIMC()"></div><div class="ff"><div class="fl">Altura (cm)</div><input class="fi" id="ma" value="${m.altura||""}" type="number" oninput="cIMC()"></div><div class="ff"><div class="fl">% Gordura</div><input class="fi" id="mg" value="${m.gord||""}" type="number" step="0.1"></div><div class="ff"><div class="fl">IMC</div><input class="fi" id="mi" value="${imc}" readonly style="opacity:.5"></div><div class="ff"><div class="fl">Cintura (cm)</div><input class="fi" id="mci" value="${m.cintura||""}" type="number" step="0.1"></div><div class="ff"><div class="fl">Quadril (cm)</div><input class="fi" id="mq" value="${m.quadril||""}" type="number" step="0.1"></div><div class="ff full"><div class="fl">Data</div><input class="fi" id="md" value="${m.data||new Date().toISOString().split("T")[0]}" type="date"></div></div><button class="save-btn" onclick="savM()">Salvar e adicionar ao histórico</button>${charts?`<div class="fsec">Evolução</div>${charts}`:""}${hist.length?`<div class="fsec">Histórico</div>${hist.slice().reverse().map((h,i)=>`<div class="mh-entry"><div class="mh-date">${h.data||"–"}</div><div class="mh-chips">${h.peso?`<span class="mh-chip">⚖️ ${h.peso}kg</span>`:""} ${h.gord?`<span class="mh-chip">🔥 ${h.gord}%</span>`:""} ${h.imc?`<span class="mh-chip">IMC ${h.imc}</span>`:""}</div><button class="mh-del" onclick="delMed(${hist.length-1-i})">×</button></div>`).join("")}`:""}`;}
+  else if(fTab==="objetivo"){b.innerHTML=`<div class="fsec">Objetivo e treino</div><div class="fg"><div class="ff"><div class="fl">Objetivo principal</div><select class="fs-el" id="oo">${["Emagrecimento","Ganho de massa","Condicionamento","Saúde / qualidade de vida","Hipertrofia","Reabilitação","Performance","Prep. esporte","Outro"].map(v=>`<option value="${v}" ${a.obj===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff"><div class="fl">Objetivo secundário</div><input class="fi" id="os" value="${a.obj_s||""}"></div><div class="ff"><div class="fl">Frequência/semana</div><select class="fs-el" id="of">${["1x","2x","3x","4x","5x"].map(v=>`<option value="${v}" ${a.freq===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff"><div class="fl">Nível</div><select class="fs-el" id="on">${["Sedentário","Iniciante","Intermediário","Avançado"].map(v=>`<option value="${v}" ${a.nivel===v?"selected":""}>${v}</option>`).join("")}</select></div><div class="ff full"><div class="fl">Descrição</div><textarea class="fta" id="od">${a.obj_d||""}</textarea></div><div class="ff full"><div class="fl">Observações do treino</div><textarea class="fta" id="ob">${a.obj_o||""}</textarea></div></div><button class="save-btn" onclick="savO()">Salvar objetivo</button>`;}
   else if(fTab==="presenca"){
-    b.innerHTML=`<div class="fsec">FrequÃªncia ${ANO}</div>${renderPresenca(fId)}`;
+    b.innerHTML=`<div class="fsec">Frequência ${ANO}</div>${renderPresenca(fId)}`;
   }
 }
 function cIMC(){const p=parseFloat(document.getElementById("mp")?.value);const h=parseFloat(document.getElementById("ma")?.value);const el=document.getElementById("mi");if(el&&p&&h)el.value=(p/((h/100)**2)).toFixed(1);}
 async function savD(){const a=gA(fId);if(!a)return;a.nome=document.getElementById("fn").value.trim()||a.nome;a.nome_c=document.getElementById("fnC").value.trim().toUpperCase()||a.nome_c;a.tel=document.getElementById("ftel").value;a.email=document.getElementById("femail").value;a.nasc=document.getElementById("fnasc").value||null;a.prof=document.getElementById("fprof").value;a.status=document.getElementById("fstatus")?.value||"ativo";
-  a.local=document.getElementById("floc").value;a.valor_ref=parseFloat(document.getElementById("fval").value)||0;document.getElementById("f-title").textContent=a.nome;document.getElementById("f-sub").textContent=`${LNOME[a.local]} Â· ${fR(a.valor_ref)}/mÃªs`;showSync();await db.from("gestao_alunos").update({nome:a.nome,nome_c:a.nome_c,tel:a.tel,email:a.email,nasc:a.nasc,prof:a.prof,local:a.local,valor_ref:a.valor_ref,status:a.status,atualizado_em:new Date()}).eq("id",fId);renderAl();buildHdr();toast("â Dados salvos");}
-async function savS(){const a=gA(fId);if(!a)return;a.saude={doencas:document.getElementById("sd").value,med:document.getElementById("sme").value,lesoes:document.getElementById("sl").value,cirurgia:document.getElementById("sc").value,obs:document.getElementById("so").value};showSync();await db.from("gestao_alunos").update({saude:a.saude,atualizado_em:new Date()}).eq("id",fId);toast("â SaÃºde salva");}
-async function savM(){const a=gA(fId);if(!a)return;const n={peso:document.getElementById("mp").value,altura:document.getElementById("ma").value,gord:document.getElementById("mg").value,cintura:document.getElementById("mci").value,quadril:document.getElementById("mq").value,data:document.getElementById("md").value,imc:document.getElementById("mi").value};a.medidas=n;if(!a.medidas_hist)a.medidas_hist=[];a.medidas_hist.push({...n,ts:Date.now()});showSync();await db.from("gestao_alunos").update({medidas:a.medidas,medidas_hist:a.medidas_hist,atualizado_em:new Date()}).eq("id",fId);renderFB();toast("â Medidas salvas");}
+  a.local=document.getElementById("floc").value;a.valor_ref=parseFloat(document.getElementById("fval").value)||0;document.getElementById("f-title").textContent=a.nome;document.getElementById("f-sub").textContent=`${LNOME[a.local]} · ${fR(a.valor_ref)}/mês`;showSync();await db.from("gestao_alunos").update({nome:a.nome,nome_c:a.nome_c,tel:a.tel,email:a.email,nasc:a.nasc,prof:a.prof,local:a.local,valor_ref:a.valor_ref,status:a.status,atualizado_em:new Date()}).eq("id",fId);renderAl();buildHdr();toast("✓ Dados salvos");}
+async function savS(){const a=gA(fId);if(!a)return;a.saude={doencas:document.getElementById("sd").value,med:document.getElementById("sme").value,lesoes:document.getElementById("sl").value,cirurgia:document.getElementById("sc").value,obs:document.getElementById("so").value};showSync();await db.from("gestao_alunos").update({saude:a.saude,atualizado_em:new Date()}).eq("id",fId);toast("✓ Saúde salva");}
+async function savM(){const a=gA(fId);if(!a)return;const n={peso:document.getElementById("mp").value,altura:document.getElementById("ma").value,gord:document.getElementById("mg").value,cintura:document.getElementById("mci").value,quadril:document.getElementById("mq").value,data:document.getElementById("md").value,imc:document.getElementById("mi").value};a.medidas=n;if(!a.medidas_hist)a.medidas_hist=[];a.medidas_hist.push({...n,ts:Date.now()});showSync();await db.from("gestao_alunos").update({medidas:a.medidas,medidas_hist:a.medidas_hist,atualizado_em:new Date()}).eq("id",fId);renderFB();toast("✓ Medidas salvas");}
 async function delMed(i){const a=gA(fId);if(!a||!a.medidas_hist)return;a.medidas_hist.splice(i,1);await db.from("gestao_alunos").update({medidas_hist:a.medidas_hist}).eq("id",fId);renderFB();}
-async function savO(){const a=gA(fId);if(!a)return;a.obj=document.getElementById("oo").value;a.obj_s=document.getElementById("os").value;a.freq=document.getElementById("of").value;a.nivel=document.getElementById("on").value;a.obj_d=document.getElementById("od").value;a.obj_o=document.getElementById("ob").value;showSync();await db.from("gestao_alunos").update({obj:a.obj,obj_s:a.obj_s,freq:a.freq,nivel:a.nivel,obj_d:a.obj_d,obj_o:a.obj_o,atualizado_em:new Date()}).eq("id",fId);toast("â Objetivo salvo");}
+async function savO(){const a=gA(fId);if(!a)return;a.obj=document.getElementById("oo").value;a.obj_s=document.getElementById("os").value;a.freq=document.getElementById("of").value;a.nivel=document.getElementById("on").value;a.obj_d=document.getElementById("od").value;a.obj_o=document.getElementById("ob").value;showSync();await db.from("gestao_alunos").update({obj:a.obj,obj_s:a.obj_s,freq:a.freq,nivel:a.nivel,obj_d:a.obj_d,obj_o:a.obj_o,atualizado_em:new Date()}).eq("id",fId);toast("✓ Objetivo salvo");}
 async function delA(id){if(!confirm("Remover este aluno?"))return;await db.from("gestao_alunos").update({ativo:false}).eq("id",id);alunos=alunos.filter(a=>a.id!==id);closeF();renderAl();buildHdr();toast("Aluno removido");}
 function renderFin(){
   const key=`${ANO}_${curMes}`;const ft=fTot(curMes);
-  let h=`<div class="sec-t">Receita â ${MPT[curMes]} ${ANO}</div><div class="fin-sum"><div class="fsc rec"><div class="fsc-v">${fR(ft.rec,true)}</div><div class="fsc-l">Recebido</div></div><div class="fsc pend"><div class="fsc-v">${fR(ft.pend,true)}</div><div class="fsc-l">Pendente</div></div><div class="fsc atras"><div class="fsc-v">${fR(ft.atras,true)}</div><div class="fsc-l">Atrasado</div></div></div><button class="export-btn" onclick="expPDF()">ð Exportar relatÃ³rio ${MSH[curMes]} em PDF</button><div style="height:14px"></div><div class="sec-t">Pagamentos</div>`;
-  alunos.forEach(a=>{const pk=`${a.id}_${ANO}_${curMes}`;const p=pagCache[pk]||{status:"pendente",nf:false,valor:a.valor_ref};const val=p.valor!=null?p.valor:a.valor_ref;h+=`<div class="pay-card"><div class="pay-top"><div class="pay-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div class="pay-info"><div class="pay-name">${a.nome}</div><div class="pay-meta">${a.local} Â· ref: ${fR(a.valor_ref)}</div></div><button class="pay-status ${p.status}" onclick="cycS('${a.id}')">${p.status}</button></div><div class="pay-bottom"><label class="nf-check ${p.nf?"done":""}"><input type="checkbox" ${p.nf?"checked":""} onchange="togNF('${a.id}',this.checked)"> NF emitida</label><input class="pay-val-in" type="number" value="${val}" onchange="savV('${a.id}',this.value)"><button class="recibo-btn" onclick="reciboAluno('${a.id}')">ð§¾ Recibo</button><button class="wpp-btn" onclick="abrirWppCobranca('${a.nome_c}','${a.tel||""}',${val},'${MPT[curMes]}')">ð¬ WhatsApp</button></div></div>`;});
+  let h=`<div class="sec-t">Receita — ${MPT[curMes]} ${ANO}</div><div class="fin-sum"><div class="fsc rec"><div class="fsc-v">${fR(ft.rec,true)}</div><div class="fsc-l">Recebido</div></div><div class="fsc pend"><div class="fsc-v">${fR(ft.pend,true)}</div><div class="fsc-l">Pendente</div></div><div class="fsc atras"><div class="fsc-v">${fR(ft.atras,true)}</div><div class="fsc-l">Atrasado</div></div></div><button class="export-btn" onclick="expPDF()">📄 Exportar relatório ${MSH[curMes]} em PDF</button><div style="height:14px"></div><div class="sec-t">Pagamentos</div>`;
+  alunos.forEach(a=>{const pk=`${a.id}_${ANO}_${curMes}`;const p=pagCache[pk]||{status:"pendente",nf:false,valor:a.valor_ref};const val=p.valor!=null?p.valor:a.valor_ref;h+=`<div class="pay-card"><div class="pay-top"><div class="pay-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div class="pay-info"><div class="pay-name">${a.nome}</div><div class="pay-meta">${a.local} · ref: ${fR(a.valor_ref)}</div></div><button class="pay-status ${p.status}" onclick="cycS('${a.id}')">${p.status}</button></div><div class="pay-bottom"><label class="nf-check ${p.nf?"done":""}"><input type="checkbox" ${p.nf?"checked":""} onchange="togNF('${a.id}',this.checked)"> NF emitida</label><input class="pay-val-in" type="number" value="${val}" onchange="savV('${a.id}',this.value)"><button class="recibo-btn" onclick="reciboAluno('${a.id}')">🧾 Recibo</button><button class="wpp-btn" onclick="abrirWppCobranca('${a.nome_c}','${a.tel||""}',${val},'${MPT[curMes]}')">💬 WhatsApp</button></div></div>`;});
   document.getElementById("fin-content").innerHTML=h;
 }
 async function cycS(aId){const pk=`${aId}_${ANO}_${curMes}`;const a=gA(aId);if(!pagCache[pk])pagCache[pk]={status:"pendente",nf:false,valor:a?a.valor_ref:0};const o=["pendente","pago","atrasado"];pagCache[pk].status=o[(o.indexOf(pagCache[pk].status)+1)%o.length];showSync();await db.from("gestao_pagamentos").upsert({id:pk,aluno_id:aId,ano:ANO,mes:curMes,status:pagCache[pk].status,valor:pagCache[pk].valor,nf:pagCache[pk].nf},{onConflict:"aluno_id,ano,mes"});renderFin();buildHdr();if(document.getElementById("s-home").classList.contains("active"))renderHome();}
 async function savV(aId,v){const pk=`${aId}_${ANO}_${curMes}`;const a=gA(aId);if(!pagCache[pk])pagCache[pk]={status:"pendente",nf:false,valor:a?a.valor_ref:0};pagCache[pk].valor=parseFloat(v)||0;showSync();await db.from("gestao_pagamentos").upsert({id:pk,aluno_id:aId,ano:ANO,mes:curMes,status:pagCache[pk].status,valor:pagCache[pk].valor,nf:pagCache[pk].nf},{onConflict:"aluno_id,ano,mes"});}
-async function togNF(aId,c){const pk=`${aId}_${ANO}_${curMes}`;const a=gA(aId);if(!pagCache[pk])pagCache[pk]={status:"pendente",nf:false,valor:a?a.valor_ref:0};pagCache[pk].nf=c;showSync();await db.from("gestao_pagamentos").upsert({id:pk,aluno_id:aId,ano:ANO,mes:curMes,status:pagCache[pk].status,valor:pagCache[pk].valor,nf:c},{onConflict:"aluno_id,ano,mes"});toast(c?"â NF registrada":"NF desmarcada");}
+async function togNF(aId,c){const pk=`${aId}_${ANO}_${curMes}`;const a=gA(aId);if(!pagCache[pk])pagCache[pk]={status:"pendente",nf:false,valor:a?a.valor_ref:0};pagCache[pk].nf=c;showSync();await db.from("gestao_pagamentos").upsert({id:pk,aluno_id:aId,ano:ANO,mes:curMes,status:pagCache[pk].status,valor:pagCache[pk].valor,nf:c},{onConflict:"aluno_id,ano,mes"});toast(c?"✓ NF registrada":"NF desmarcada");}
 function reciboAluno(aId){
   try{const{jsPDF}=window.jspdf;const doc=new jsPDF({unit:"mm",format:"a4"});
   const a=gA(aId);if(!a)return;
   const pk=`${aId}_${ANO}_${curMes}`;const p=pagCache[pk]||{status:"pendente",nf:false,valor:a.valor_ref};
   const val=p.valor!=null?p.valor:a.valor_ref;const mes=MPT[curMes];let y=20;
   doc.setFillColor(10,110,86);doc.rect(0,0,210,42,"F");
-  doc.setFont("helvetica","bold");doc.setFontSize(22);doc.setTextColor(255,255,255);doc.text("LÃ©o Personal",20,24);
+  doc.setFont("helvetica","bold");doc.setFontSize(22);doc.setTextColor(255,255,255);doc.text("Léo Personal",20,24);
   doc.setFont("helvetica","normal");doc.setFontSize(11);doc.setTextColor(200,240,220);doc.text("Personal Trainer",20,34);
   y=58;doc.setFont("helvetica","bold");doc.setFontSize(16);doc.setTextColor(20,20,20);doc.text("RECIBO DE PAGAMENTO",20,y);y+=10;
   doc.setDrawColor(220,220,220);doc.line(20,y,190,y);y+=10;
-  [["Aluno",a.nome],["Local",`${a.local} â ${LNOME[a.local]}`],["ReferÃªncia",`${mes} ${ANO}`],["Objetivo",a.obj||"â"]].forEach(([l,v])=>{doc.setFont("helvetica","normal");doc.setFontSize(11);doc.setTextColor(100,100,100);doc.text(`${l}:`,20,y);doc.setTextColor(20,20,20);doc.setFont("helvetica","bold");doc.text(String(v),65,y);y+=8;});
+  [["Aluno",a.nome],["Local",`${a.local} — ${LNOME[a.local]}`],["Referência",`${mes} ${ANO}`],["Objetivo",a.obj||"—"]].forEach(([l,v])=>{doc.setFont("helvetica","normal");doc.setFontSize(11);doc.setTextColor(100,100,100);doc.text(`${l}:`,20,y);doc.setTextColor(20,20,20);doc.setFont("helvetica","bold");doc.text(String(v),65,y);y+=8;});
   y+=4;doc.setDrawColor(220,220,220);doc.line(20,y,190,y);y+=10;
   doc.setFillColor(240,255,250);doc.rect(18,y-4,174,18,"F");
   doc.setFont("helvetica","bold");doc.setFontSize(14);doc.setTextColor(10,110,86);doc.text("Valor:",22,y+7);
   doc.setFontSize(20);doc.text(`R$ ${Number(val).toLocaleString("pt-BR",{minimumFractionDigits:2})}`,70,y+8);y+=24;
   const sC=p.status==="pago"?[10,110,86]:p.status==="atrasado"?[176,40,40]:[139,90,0];
   doc.setFont("helvetica","bold");doc.setFontSize(13);doc.setTextColor(...sC);doc.text(`Status: ${p.status.toUpperCase()}`,20,y);y+=8;
-  doc.setFont("helvetica","normal");doc.setFontSize(11);doc.setTextColor(120,120,120);doc.text(`NF emitida: ${p.nf?"Sim":"NÃ£o"}`,20,y);y+=14;
+  doc.setFont("helvetica","normal");doc.setFontSize(11);doc.setTextColor(120,120,120);doc.text(`NF emitida: ${p.nf?"Sim":"Não"}`,20,y);y+=14;
   doc.setDrawColor(220,220,220);doc.line(20,y,190,y);y+=8;
-  doc.setFontSize(10);doc.text(`Gerado em ${TODAY.toLocaleDateString("pt-BR")} Ã s ${TODAY.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})}`,20,y);
+  doc.setFontSize(10);doc.text(`Gerado em ${TODAY.toLocaleDateString("pt-BR")} às ${TODAY.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})}`,20,y);
   doc.save(`recibo_${a.nome_c.toLowerCase()}_${mes.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}_${ANO}.pdf`);
-  toast("â Recibo gerado");}catch(e){toast("Erro ao gerar recibo");}
+  toast("✓ Recibo gerado");}catch(e){toast("Erro ao gerar recibo");}
 }
 function expPDF(){
   try{const{jsPDF}=window.jspdf;const doc=new jsPDF({unit:"mm",format:"a4"});
   const ft=fTot(curMes),t=mTot(curMes),mes=MPT[curMes];let y=20;
   doc.setFillColor(10,110,86);doc.rect(0,0,210,42,"F");
-  doc.setFont("helvetica","bold");doc.setFontSize(20);doc.setTextColor(255,255,255);doc.text("LÃ©o Personal â RelatÃ³rio Mensal",20,24);
-  doc.setFont("helvetica","normal");doc.setFontSize(11);doc.setTextColor(200,240,220);doc.text(`${mes} ${ANO} Â· ${TODAY.toLocaleDateString("pt-BR")}`,20,34);
+  doc.setFont("helvetica","bold");doc.setFontSize(20);doc.setTextColor(255,255,255);doc.text("Léo Personal — Relatório Mensal",20,24);
+  doc.setFont("helvetica","normal");doc.setFontSize(11);doc.setTextColor(200,240,220);doc.text(`${mes} ${ANO} · ${TODAY.toLocaleDateString("pt-BR")}`,20,34);
   y=56;doc.setFont("helvetica","bold");doc.setFontSize(13);doc.setTextColor(20,20,20);doc.text("Resumo financeiro",20,y);y+=8;
   doc.setFont("helvetica","normal");doc.setFontSize(11);
   doc.setTextColor(10,110,86);doc.text(`Recebido: R$ ${ft.rec.toLocaleString("pt-BR")}`,20,y);
@@ -1170,22 +1170,22 @@ function expPDF(){
   doc.setFont("helvetica","bold");doc.setFontSize(10);doc.setTextColor(120,120,120);
   doc.text("Aluno",20,y);doc.text("Status",110,y);doc.text("Valor",145,y);doc.text("NF",175,y);y+=5;
   doc.setFont("helvetica","normal");doc.setFontSize(10);
-  alunos.forEach(a=>{if(y>270){doc.addPage();y=20;}const p=pagCache[`${a.id}_${ANO}_${curMes}`]||{status:"pendente",nf:false,valor:a.valor_ref};const val=p.valor!=null?p.valor:a.valor_ref;const sC=p.status==="pago"?[10,110,86]:p.status==="atrasado"?[176,40,40]:[139,90,0];doc.setTextColor(20,20,20);doc.text(a.nome.substring(0,28),20,y);doc.setTextColor(...sC);doc.text(p.status,110,y);doc.setTextColor(20,20,20);doc.text(`R$ ${Number(val).toLocaleString("pt-BR")}`,145,y);doc.text(p.nf?"Sim":"â",175,y);y+=5;});
+  alunos.forEach(a=>{if(y>270){doc.addPage();y=20;}const p=pagCache[`${a.id}_${ANO}_${curMes}`]||{status:"pendente",nf:false,valor:a.valor_ref};const val=p.valor!=null?p.valor:a.valor_ref;const sC=p.status==="pago"?[10,110,86]:p.status==="atrasado"?[176,40,40]:[139,90,0];doc.setTextColor(20,20,20);doc.text(a.nome.substring(0,28),20,y);doc.setTextColor(...sC);doc.text(p.status,110,y);doc.setTextColor(20,20,20);doc.text(`R$ ${Number(val).toLocaleString("pt-BR")}`,145,y);doc.text(p.nf?"Sim":"–",175,y);y+=5;});
   doc.save(`relatorio_${mes.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}_${ANO}.pdf`);
-  toast("â PDF gerado");}catch(e){toast("Erro ao gerar PDF");}
+  toast("✓ PDF gerado");}catch(e){toast("Erro ao gerar PDF");}
 }
 function renderDash(){
   const t=mTot(curMes),ft=fTot(curMes);const maxL=Math.max(...LOCS.map(s=>t[s]),1);
   const acum=anRec();const rank=alunos.map(a=>({...a,acum:acum[a.id]})).sort((a,b)=>b.acum-a.acum);
-  const emj=["ð¥","ð¥","ð¥","4Â°","5Â°","6Â°","7Â°","8Â°","9Â°","10Â°","11Â°","12Â°","13Â°","14Â°"];
+  const emj=["🥇","🥈","🥉","4°","5°","6°","7°","8°","9°","10°","11°","12°","13°","14°"];
   const anivs=alunos.filter(a=>{if(!a.nasc)return false;const n=new Date(a.nasc);const ty=new Date(ANO,n.getMonth(),n.getDate());const diff=Math.ceil((ty-TODAY)/864e5);return diff>=0&&diff<=60;}).sort((a,b)=>{const da=new Date(ANO,new Date(a.nasc).getMonth(),new Date(a.nasc).getDate());const db=new Date(ANO,new Date(b.nasc).getMonth(),new Date(b.nasc).getDate());return da-db;});
   const aT={};const num=new Date(ANO,curMes+1,0).getDate();for(let d=1;d<=num;d++){const sl=regCache[dk(ANO,curMes,d)]||{};Object.values(sl).forEach(nC=>{if(nC)aT[nC]=(aT[nC]||0)+1;});}
   const sorted=Object.entries(aT).sort((a,b)=>b[1]-a[1]);const maxA=sorted.length?sorted[0][1]:1;
   const clrs={fs:"var(--fs-dk)",ic:"var(--ic-dk)",pr:"var(--pr-dk)",cd:"var(--cd-dk)"};
-  let h=`<div class="sec" style="margin-top:0">FrequÃªncia â ${MPT[curMes]}</div><div class="kpi-g"><div class="kpi tot"><div class="kpi-v">${t.total}</div><div class="kpi-l">Total de aulas</div></div><div class="kpi fs"><div class="kpi-v">${t.FS}</div><div class="kpi-l">F. Scherer</div></div><div class="kpi ic"><div class="kpi-v">${t.IC}</div><div class="kpi-l">Incorpore</div></div><div class="kpi pr"><div class="kpi-v">${t.PR}</div><div class="kpi-l">Pratique</div></div><div class="kpi cd"><div class="kpi-v">${t.CD}</div><div class="kpi-l">CondomÃ­nio</div></div><div class="kpi"><div class="kpi-v" style="color:var(--g1);font-size:18px">${fR(ft.rec,true)}</div><div class="kpi-l">Receita recebida</div></div></div><div class="sec">Aulas por local</div>${LOCS.map(s=>`<div class="bar-r"><span class="bar-l ${s.toLowerCase()}">${s}</span><div class="bar-bg"><div class="bar-f ${s.toLowerCase()}" style="width:${Math.round(t[s]/maxL*100)}%"></div></div><span class="bar-n">${t[s]}</span></div>`).join("")}`;
-  if(sorted.length){h+=`<div class="sec">FrequÃªncia por aluno</div>`;sorted.forEach(([nC,cnt])=>{const a=gAN(nC);const cl=a?a.local.toLowerCase():"";h+=`<div class="af-r"><span class="af-n">${nC}</span><div class="af-bg"><div class="af-f" style="width:${Math.round(cnt/maxA*100)}%;background:${clrs[cl]||"var(--muted)"}"></div></div><span class="af-c">${cnt}</span></div>`;});}
+  let h=`<div class="sec" style="margin-top:0">Frequência — ${MPT[curMes]}</div><div class="kpi-g"><div class="kpi tot"><div class="kpi-v">${t.total}</div><div class="kpi-l">Total de aulas</div></div><div class="kpi fs"><div class="kpi-v">${t.FS}</div><div class="kpi-l">F. Scherer</div></div><div class="kpi ic"><div class="kpi-v">${t.IC}</div><div class="kpi-l">Incorpore</div></div><div class="kpi pr"><div class="kpi-v">${t.PR}</div><div class="kpi-l">Pratique</div></div><div class="kpi cd"><div class="kpi-v">${t.CD}</div><div class="kpi-l">Condomínio</div></div><div class="kpi"><div class="kpi-v" style="color:var(--g1);font-size:18px">${fR(ft.rec,true)}</div><div class="kpi-l">Receita recebida</div></div></div><div class="sec">Aulas por local</div>${LOCS.map(s=>`<div class="bar-r"><span class="bar-l ${s.toLowerCase()}">${s}</span><div class="bar-bg"><div class="bar-f ${s.toLowerCase()}" style="width:${Math.round(t[s]/maxL*100)}%"></div></div><span class="bar-n">${t[s]}</span></div>`).join("")}`;
+  if(sorted.length){h+=`<div class="sec">Frequência por aluno</div>`;sorted.forEach(([nC,cnt])=>{const a=gAN(nC);const cl=a?a.local.toLowerCase():"";h+=`<div class="af-r"><span class="af-n">${nC}</span><div class="af-bg"><div class="af-f" style="width:${Math.round(cnt/maxA*100)}%;background:${clrs[cl]||"var(--muted)"}"></div></div><span class="af-c">${cnt}</span></div>`;});}
   h+=`<div class="sec">Ranking acumulado ${ANO}</div>`;rank.filter(a=>a.acum>0).forEach((a,i)=>{h+=`<div class="rank-row"><span class="rank-pos">${emj[i]||i+1}</span><div style="flex:1"><div class="rank-name">${a.nome}</div><div class="rank-sub-d">${a.local}</div></div><span class="rank-val">${fR(a.acum)}</span></div>`;});
-  if(anivs.length){h+=`<div class="sec">AniversÃ¡rios prÃ³ximos</div>`;anivs.forEach(a=>{const n=new Date(a.nasc);const ty=new Date(ANO,n.getMonth(),n.getDate());const diff=Math.ceil((ty-TODAY)/864e5);h+=`<div class="aniv-row"><div class="aniv-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div style="flex:1"><div class="aniv-name">${a.nome}</div><div class="aniv-date">${p2(n.getDate())}/${p2(n.getMonth()+1)}</div></div><span class="aniv-badge ${diff<=1?"hoje":"prox"}">${diff===0?"Hoje!":diff===1?"AmanhÃ£!":diff+" dias"}</span></div>`;});}
+  if(anivs.length){h+=`<div class="sec">Aniversários próximos</div>`;anivs.forEach(a=>{const n=new Date(a.nasc);const ty=new Date(ANO,n.getMonth(),n.getDate());const diff=Math.ceil((ty-TODAY)/864e5);h+=`<div class="aniv-row"><div class="aniv-av" style="${avS(a.local)}">${ini(a.nome_c)}</div><div style="flex:1"><div class="aniv-name">${a.nome}</div><div class="aniv-date">${p2(n.getDate())}/${p2(n.getMonth()+1)}</div></div><span class="aniv-badge ${diff<=1?"hoje":"prox"}">${diff===0?"Hoje!":diff===1?"Amanhã!":diff+" dias"}</span></div>`;});}
   document.getElementById("dash-content").innerHTML=h;
 }
 function goScreen(name,btn){document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));document.querySelectorAll(".nb").forEach(b=>b.classList.remove("active"));document.getElementById("s-"+name).classList.add("active");btn.classList.add("active");if(name==="home")renderHome();else if(name==="reg")renderCal();else if(name==="alunos")renderAl();else if(name==="fin")renderFin();else if(name==="grade")renderGrade();else if(name==="desp")renderDesp();else if(name==="dash")renderDash();}
@@ -1212,7 +1212,7 @@ async function _buildHoje(){
     return '<div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #1e1e1e">'+
       '<input type="checkbox"'+(f?' checked':'')+' style="width:19px;height:19px;accent-color:#00C896;cursor:pointer;flex-shrink:0" onchange="_mv2Reg(\'' +a.nome_c+'\',this.checked)">'+
       '<div style="flex:1;min-width:0"><div style="font-size:14px;font-weight:600;color:'+(f?'#555':'#eee')+(f?';text-decoration:line-through':'')+'">'+a.nome.split(' ').slice(0,2).join(' ')+'</div>'+
-      '<div style="font-size:11px;color:#555;margin-top:2px">'+g.hora+' · '+g.dur+'min · '+a.local+'</div></div>'+
+      '<div style="font-size:11px;color:#555;margin-top:2px">'+g.hora+' � '+g.dur+'min � '+a.local+'</div></div>'+
       '<span style="font-size:11px;padding:3px 9px;border-radius:20px;background:'+(f?'#0d2b1e':'#141e2a')+';color:'+(f?'#00C896':'#4a90d9')+';white-space:nowrap">'+(f?'✓ feita':'pendente')+'</span></div>';
   }).join('');
   return '<div id="mv2-hoje" style="background:#0e0e0e;border-radius:14px;border:1px solid #1e1e1e;padding:14px 16px;margin-bottom:12px"><div style="font-size:10px;font-weight:700;color:#444;letter-spacing:1.2px;margin-bottom:10px">📅 GRADE DE HOJE</div>'+itens+'</div>';
@@ -1229,20 +1229,20 @@ async function _buildCobr(){
     var msg=encodeURIComponent('Oi '+a.nome.split(' ')[0]+'! Passando pra lembrar do pagamento. Qualquer coisa me fala!');
     return '<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #1a1a1a">'+
       '<div><div style="font-size:13px;font-weight:600;color:#fff">'+a.nome.split(' ').slice(0,2).join(' ')+'</div>'+
-      '<div style="font-size:11px;color:#c0392b;margin-top:2px">'+dias+' dias em aberto · R$ '+Number(p.valor).toLocaleString('pt-BR')+'</div></div>'+
+      '<div style="font-size:11px;color:#c0392b;margin-top:2px">'+dias+' dias em aberto � R$ '+Number(p.valor).toLocaleString('pt-BR')+'</div></div>'+
       '<a href="https://wa.me/55'+tel+'?text='+msg+'" target="_blank" style="background:#25D366;color:#fff;border-radius:8px;padding:6px 13px;font-size:12px;font-weight:700;text-decoration:none">WhatsApp</a></div>';
   }).join('');
-  return '<div id="mv2-cobr" style="background:#0e0e0e;border-radius:14px;border:1px solid #2a1515;padding:14px 16px;margin-bottom:12px"><div style="font-size:10px;font-weight:700;color:#444;letter-spacing:1.2px;margin-bottom:10px">⚠️ COBRANÇA PENDENTE ('+ps.length+')</div>'+itens+'</div>';
+  return '<div id="mv2-cobr" style="background:#0e0e0e;border-radius:14px;border:1px solid #2a1515;padding:14px 16px;margin-bottom:12px"><div style="font-size:10px;font-weight:700;color:#444;letter-spacing:1.2px;margin-bottom:10px">⚠️ COBRAN�A PENDENTE ('+ps.length+')</div>'+itens+'</div>';
 }
 async function _buildSem(){
   var n=new Date(),dw=n.getDay(),seg=new Date(n);seg.setDate(n.getDate()-(dw===0?6:dw-1));
   var dias=Array.from({length:7},function(_,i){var d=new Date(seg);d.setDate(seg.getDate()+i);return{date:d,dia:d.getDate(),mes:d.getMonth()+1,ano:d.getFullYear()};});
   var regs=await _get('gestao_registro','?ano=eq.'+n.getFullYear()+'&mes=eq.'+(n.getMonth()+1)+'&dia=gte.'+dias[0].dia+'&dia=lte.'+dias[6].dia+'&select=dia');
   var cnt={};regs.forEach(r=>{cnt[r.dia]=(cnt[r.dia]||0)+1;});
-  var tot=regs.length,labs=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  var tot=regs.length,labs=['Seg','Ter','Qua','Qui','Sex','S�b','Dom'];
   var cols=dias.map(function(d,i){var isH=d.date.toDateString()===n.toDateString(),fut=d.date>n&&!isH,num=cnt[d.dia]||0;
     return '<div style="text-align:center;flex:1"><div style="font-size:10px;font-weight:'+(isH?700:400)+';color:'+(isH?'#00C896':'#555')+';margin-bottom:6px">'+labs[i]+'</div>'+
-      '<div style="width:34px;height:34px;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center;background:'+(isH?'#00C896':num>0?'#0d2b1e':'#151515')+';border:1px solid '+(isH?'#00C896':num>0?'#00C896':'#2a2a2a')+';font-size:13px;font-weight:700;color:'+(isH?'#000':num>0?'#00C896':'#333')+'">'+(fut?'·':num||'0')+'</div></div>';
+      '<div style="width:34px;height:34px;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center;background:'+(isH?'#00C896':num>0?'#0d2b1e':'#151515')+';border:1px solid '+(isH?'#00C896':num>0?'#00C896':'#2a2a2a')+';font-size:13px;font-weight:700;color:'+(isH?'#000':num>0?'#00C896':'#333')+'">'+(fut?'�':num||'0')+'</div></div>';
   }).join('');
   return '<div id="mv2-sem" style="background:#0e0e0e;border-radius:14px;border:1px solid #1e1e1e;padding:14px 16px;margin-bottom:12px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div style="font-size:10px;font-weight:700;color:#444;letter-spacing:1.2px">📊 SEMANA ATUAL</div><div style="font-size:13px;font-weight:700;color:#00C896">'+tot+' aula'+(tot!==1?'s':'')+'</div></div><div style="display:flex;gap:4px">'+cols+'</div></div>';
 }
@@ -1250,8 +1250,8 @@ async function _buildRenov(){
   var als=await _get('gestao_alunos','?ativo=eq.true&select=nome,criado_em');
   var n=new Date(),avs=als.map(function(a){var ini=new Date(a.criado_em),ms=(n.getFullYear()-ini.getFullYear())*12+(n.getMonth()-ini.getMonth()),prx=[3,6,12,18,24].find(x=>x>ms&&(x-ms)<=1);return prx?{nome:a.nome.split(' ').slice(0,2).join(' '),ms:ms,prx:prx}:null;}).filter(Boolean);
   if(!avs.length)return '';
-  var itens=avs.map(a=>'<div style="font-size:13px;color:#FFD54F;padding:5px 0;border-bottom:1px solid #1e1e1e">'+a.nome+' · '+a.ms+' meses → completa '+a.prx+' meses</div>').join('');
-  return '<div id="mv2-renov" style="background:#0e0e0e;border-radius:14px;border:1px solid #2a2500;padding:14px 16px;margin-bottom:12px"><div style="font-size:10px;font-weight:700;color:#444;letter-spacing:1.2px;margin-bottom:10px">🔄 RENOVAÇÃO EM BREVE</div>'+itens+'</div>';
+  var itens=avs.map(a=>'<div style="font-size:13px;color:#FFD54F;padding:5px 0;border-bottom:1px solid #1e1e1e">'+a.nome+' � '+a.ms+' meses → completa '+a.prx+' meses</div>').join('');
+  return '<div id="mv2-renov" style="background:#0e0e0e;border-radius:14px;border:1px solid #2a2500;padding:14px 16px;margin-bottom:12px"><div style="font-size:10px;font-weight:700;color:#444;letter-spacing:1.2px;margin-bottom:10px">🔄 RENOVA��O EM BREVE</div>'+itens+'</div>';
 }
 window._mv2Reg=async function(nomeC,checked){
   var n=new Date(),ano=n.getFullYear(),mes=n.getMonth()+1,dia=n.getDate();
@@ -1265,7 +1265,7 @@ var _obs=new MutationObserver(function(){
   var open=modal.style.display&&modal.style.display!=='none'&&!modal.classList.contains('hidden');
   if(!open||document.getElementById('mv2-notas'))return;
   var div=document.createElement('div');div.id='mv2-notas';div.style.cssText='padding:14px 16px;border-top:1px solid #1e1e1e;margin-top:8px';
-  div.innerHTML='<div style="font-size:10px;font-weight:700;color:#444;letter-spacing:1.2px;margin-bottom:8px">📝 NOTAS RÁPIDAS</div>'+'<textarea id="mv2-notas-ta" placeholder="Ex: Dor no joelho, foco em MMSS..." style="width:100%;min-height:80px;background:#151515;border:1px solid #2a2a2a;border-radius:10px;color:#ccc;padding:10px;font-size:13px;resize:vertical;box-sizing:border-box;font-family:inherit"></textarea>'+'<div style="display:flex;justify-content:flex-end;margin-top:6px"><button onclick="_mv2SalvaNota()" style="background:#00C896;color:#000;border:none;border-radius:8px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer">Salvar nota</button></div>';
+  div.innerHTML='<div style="font-size:10px;font-weight:700;color:#444;letter-spacing:1.2px;margin-bottom:8px">📝 NOTAS R�PIDAS</div>'+'<textarea id="mv2-notas-ta" placeholder="Ex: Dor no joelho, foco em MMSS..." style="width:100%;min-height:80px;background:#151515;border:1px solid #2a2a2a;border-radius:10px;color:#ccc;padding:10px;font-size:13px;resize:vertical;box-sizing:border-box;font-family:inherit"></textarea>'+'<div style="display:flex;justify-content:flex-end;margin-top:6px"><button onclick="_mv2SalvaNota()" style="background:#00C896;color:#000;border:none;border-radius:8px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer">Salvar nota</button></div>';
   modal.appendChild(div);_mv2CarregaNota();
 });
 var _fm=document.getElementById('ficha-modal')||document.body;
