@@ -1215,11 +1215,13 @@ async function _buildHoje(){
   var aMap={};(alunos||[]).forEach(a=>aMap[a.id]=a);
   var regSet=new Set((regs||[]).map(r=>r.aluno_id));
   var rows=grade.map(g=>{
-    var al=aMap[g.id]||{},nome=al.nome_c||al.nome||g.id,loc=(al.local||'').toUpperCase(),locL=(al.local||'').toLowerCase(),feita=regSet.has(g.id);
+    var al=aMap[g.id]||{},nome=al.nome_c||al.nome||g.id;
+    var loc=(al.local||'').toUpperCase(),locL=(al.local||'').toLowerCase(),feita=regSet.has(g.id);
+    var nC=feita?'#555':'#f0f0f0',nD=feita?'line-through':'none';
     return '<div style="display:flex;align-items:center;padding:8px 0;border-bottom:0.8px solid #2a2a2a;gap:10px;">'
-      +'<input type="checkbox" id="mv2cb_'+g.id+'"'+(feita?' checked':'')+' onchange="window._mv2Reg(''+g.id+'',this.checked)" style="width:16px;height:16px;accent-color:#00c896;cursor:pointer;flex-shrink:0;">'
+      +'<input type="checkbox" class="mv2cb" data-id="'+g.id+'"'+(feita?' checked':'')+' style="width:16px;height:16px;accent-color:#00c896;cursor:pointer;flex-shrink:0;">'
       +'<span style="color:#555;font-size:10px;width:34px;">'+g.hora+'</span>'
-      +'<span style="flex:1;font-size:13px;font-weight:500;color:'+(feita?'#555':'#f0f0f0')+';text-decoration:'+(feita?'line-through':'none')+';">'+nome+'</span>'
+      +'<span style="flex:1;font-size:13px;font-weight:500;color:'+nC+';text-decoration:'+nD+';">'+nome+'</span>'
       +'<span class="ts-loc '+locL+'" style="font-size:9px;padding:2px 7px;border-radius:4px;">'+loc+'</span>'
       +(feita?'<span style="font-size:9px;color:#00c896;font-weight:600;min-width:28px;text-align:right;">feita</span>':'<span style="min-width:28px;"></span>')
       +'</div>';
@@ -1252,7 +1254,8 @@ async function _buildSem(){
   var cont=[0,0,0,0,0,0,0];
   (regs||[]).forEach(r=>{var d=new Date(h.ano,h.mes0-1,r.dia);if(d>=wS&&d<=wE){var di=d.getDay();cont[di===0?6:di-1]++;}});
   var total=cont.reduce((a,b)=>a+b,0),hiIdx=dow===0?6:dow-1;
-  var cols=sN.map((d,i)=>{var iH=i===hiIdx,bg=iH?'#0d2e26':'transparent',brd=iH?'1px solid #00c896':'1px solid #2a2a2a',cor=iH?'#00c896':cont[i]>0?'#f0f0f0':'#333';
+  var cols=sN.map((d,i)=>{
+    var iH=i===hiIdx,bg=iH?'#0d2e26':'transparent',brd=iH?'1px solid #00c896':'1px solid #2a2a2a',cor=iH?'#00c896':cont[i]>0?'#f0f0f0':'#333';
     return '<div style="flex:1;text-align:center;background:'+bg+';border:'+brd+';border-radius:8px;padding:6px 2px;"><div style="font-size:8px;color:#555;margin-bottom:3px;">'+d+'</div><div style="font-size:16px;font-weight:700;color:'+cor+';">'+cont[i]+'</div></div>';
   }).join('');
   return '<div class="today-card"><div style="color:#888;font-size:11px;font-weight:700;margin-bottom:10px;letter-spacing:0.5px;">SEMANA ATUAL<span style="color:#00c896;font-weight:600;font-size:10px;margin-left:8px;">'+total+' aulas</span></div><div style="display:flex;gap:4px;">'+cols+'</div></div>';
@@ -1266,8 +1269,13 @@ async function _buildRenov(){
   var rows=alerts.map(a=>'<div style="display:flex;align-items:center;padding:7px 0;border-bottom:0.8px solid #2a2a2a;gap:8px;"><span style="flex:1;font-size:13px;color:#f0f0f0;">'+a.nome+'</span><span style="font-size:10px;color:#888;">'+a.m+' meses</span><span style="font-size:9px;color:#ff9800;font-weight:600;">'+(a.diff===0?'este mes':'proximo mes')+'</span></div>').join('');
   return '<div class="today-card"><div style="color:#ff9800;font-size:11px;font-weight:700;margin-bottom:10px;letter-spacing:0.5px;">RENOVACAO EM BREVE<span style="color:#444;font-weight:400;font-size:10px;margin-left:8px;">'+alerts.length+'</span></div>'+rows+'</div>';
 }
+document.addEventListener('change',function(e){
+  var cb=e.target;if(!cb.classList.contains('mv2cb'))return;
+  window._mv2Reg(cb.dataset.id,cb.checked);
+});
 window._mv2Reg=async function(alunoId,checked){
-  var h=_hj(),cb=document.getElementById('mv2cb_'+alunoId);if(cb)cb.disabled=true;
+  var h=_hj(),cb=document.querySelector('.mv2cb[data-id="'+alunoId+'"]');
+  if(cb)cb.disabled=true;
   if(checked){
     var regs=await _get('gestao_registro','?select=slot&ano=eq.'+h.ano+'&mes=eq.'+h.mes0+'&dia=eq.'+h.dia);
     var slots=(regs||[]).map(r=>r.slot||0),slot=slots.length?Math.max(...slots)+1:0;
@@ -1278,21 +1286,38 @@ window._mv2Reg=async function(alunoId,checked){
   }
   if(cb)cb.disabled=false;setTimeout(_mv2Run,300);
 };
-document.addEventListener('click',function(e){var c=e.target.closest('[onclick*="openF"]');if(c){var m=(c.getAttribute('onclick')||'').match(/openF\(['"](w+)['"]\)/);if(m)window._mv2AlunoId=m[1];}});
+document.addEventListener('click',function(e){
+  var c=e.target.closest('[onclick*="openF"]');
+  if(c){var m=(c.getAttribute('onclick')||'').match(/openF\(['"]([\w]+)['"]\)/);if(m)window._mv2AlunoId=m[1];}
+});
 var _obs=new MutationObserver(function(){
   var modal=document.getElementById('ficha-modal');if(!modal)return;
   var open=modal.style.display&&modal.style.display!=='none'&&!modal.classList.contains('hidden');
   if(!open||document.getElementById('mv2-notas'))return;
   var div=document.createElement('div');div.id='mv2-notas';
   div.style.cssText='margin:16px;padding:12px;background:#141414;border:0.8px solid #2a2a2a;border-radius:10px;';
-  div.innerHTML='<div style="font-size:10px;color:#00c896;font-weight:700;margin-bottom:8px;letter-spacing:0.5px;">NOTAS RAPIDAS</div>'
-    +'<textarea id="mv2-nota-ta" placeholder="Observacoes, saude, preferencias..." style="width:100%;height:80px;background:#0a0a0a;color:#f0f0f0;border:0.8px solid #2a2a2a;border-radius:6px;padding:8px;font-size:12px;resize:vertical;box-sizing:border-box;"></textarea>'
-    +'<button onclick="window._mv2SalvaNota()" style="margin-top:8px;background:#00c896;color:#000;border:none;border-radius:6px;padding:6px 16px;font-size:11px;font-weight:700;cursor:pointer;">Salvar nota</button>';
+  div.innerHTML='<div style="font-size:10px;color:#00c896;font-weight:700;margin-bottom:8px;">NOTAS RAPIDAS</div>'
+    +'<textarea id="mv2-nota-ta" placeholder="Observacoes, preferencias..." style="width:100%;height:80px;background:#0a0a0a;color:#f0f0f0;border:0.8px solid #2a2a2a;border-radius:6px;padding:8px;font-size:12px;resize:vertical;box-sizing:border-box;"></textarea>'
+    +'<button id="mv2-nota-btn" style="margin-top:8px;background:#00c896;color:#000;border:none;border-radius:6px;padding:6px 16px;font-size:11px;font-weight:700;cursor:pointer;">Salvar nota</button>';
   modal.insertBefore(div,modal.firstChild);window._mv2CarregaNota();
+  document.getElementById('mv2-nota-btn').addEventListener('click',window._mv2SalvaNota);
 });
 _obs.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});
-window._mv2CarregaNota=async function(){var id=window._mv2AlunoId;if(!id)return;var r=await _get('gestao_alunos','?select=saude&id=eq.'+id);var ta=document.getElementById('mv2-nota-ta');if(!ta)return;var saude=(r&&r[0]&&r[0].saude)||{};ta.value=saude.notas_rapidas||'';};
-window._mv2SalvaNota=async function(){var id=window._mv2AlunoId;if(!id)return;var ta=document.getElementById('mv2-nota-ta');if(!ta)return;var r=await _get('gestao_alunos','?select=saude&id=eq.'+id);var saude=(r&&r[0]&&r[0].saude)||{};saude.notas_rapidas=ta.value;await fetch(_SB+'/rest/v1/gestao_alunos?id=eq.'+id,{method:'PATCH',headers:{..._H,'Prefer':'return=minimal'},body:JSON.stringify({saude:saude})});var btn=document.querySelector('#mv2-notas button');if(btn){btn.textContent='Salvo!';setTimeout(()=>{btn.textContent='Salvar nota';},1500);}};
+window._mv2CarregaNota=async function(){
+  var id=window._mv2AlunoId;if(!id)return;
+  var r=await _get('gestao_alunos','?select=saude&id=eq.'+id);
+  var ta=document.getElementById('mv2-nota-ta');if(!ta)return;
+  var saude=(r&&r[0]&&r[0].saude)||{};ta.value=saude.notas_rapidas||'';
+};
+window._mv2SalvaNota=async function(){
+  var id=window._mv2AlunoId;if(!id)return;
+  var ta=document.getElementById('mv2-nota-ta');if(!ta)return;
+  var r=await _get('gestao_alunos','?select=saude&id=eq.'+id);
+  var saude=(r&&r[0]&&r[0].saude)||{};saude.notas_rapidas=ta.value;
+  await fetch(_SB+'/rest/v1/gestao_alunos?id=eq.'+id,{method:'PATCH',headers:{..._H,'Prefer':'return=minimal'},body:JSON.stringify({saude:saude})});
+  var btn=document.getElementById('mv2-nota-btn');
+  if(btn){btn.textContent='Salvo!';setTimeout(function(){btn.textContent='Salvar nota';},1500);}
+};
 async function _mv2Run(){
   var hc=document.getElementById('home-content');if(!hc)return;
   var old=document.getElementById('mv2-wrapper');if(old)old.remove();
